@@ -12,7 +12,7 @@ $(document).ready(function() {
 
         $.ajax({
           type: 'POST',
-          url:'http://galvanize-student-apis.herokuapp.com/gpersonnel/users',
+          url:'https://galvanize-student-apis.herokuapp.com/gpersonnel/users',
           data:  payloadObj
         }).done(function(results) {
             console.log(results);
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
     $.ajax({
       method: 'GET',
-      url: 'http://galvanize-student-apis.herokuapp.com/gpersonnel/roles'
+      url: 'https://galvanize-student-apis.herokuapp.com/gpersonnel/roles'
     }).done(function(results) {
 
       //populate options in the select from the api call
@@ -109,9 +109,10 @@ $(document).ready(function() {
         var imagePath = '';
         for (var i = 0; i < results.length; i++) {
           if (results[i].title === $('.target option:selected').text()) {
-            imagePath = results[i].img;
+            imagePath = './src/' + results[i].img;
           }
         }
+
         setPicture(imagePath);
       });
 
