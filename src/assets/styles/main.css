@@ -1,0 +1,22 @@
+.valid-callout {
+  visibility : hidden;
+}
+
+
+.label {
+  padding: 10px;
+  margin: 40px;
+  display: block;
+  font-size: 14px;
+  width: 295px;
+  height: 40px;
+}
+
+
+#save {
+  margin: 40px;
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+  width: 300px;
+}
