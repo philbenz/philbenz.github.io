@@ -32,7 +32,6 @@ $('#input').on('input',function (event) {
     if(input.indexOf('@') >= 1 && input.indexOf('.com') > input.indexOf('@')+1) {
       $('#input').css({'border':'none' , 'outline':'none'})
       $('#input').css({'border': '1px solid blue', 'box-shadow': '0 0 5px blue'})
-      console.log('test');
     }else{
       $('#input').css('outline','none')
       $('#input').css({'border': '1px solid red', 'box-shadow': '0 0 5px red'})
@@ -45,6 +44,7 @@ $('#input').on('input',function (event) {
       $('#input').css({'outline':'none', 'box-shadow' : 'none', 'border':'1px solid lightgrey'})
     }else{
       $('form').animate({'marginLeft': '+=10px'},100).animate({'marginLeft': '-=10px'},100)
+      $('#input').css({'border': '1px solid red', 'box-shadow': '0 0 5px red'})
     }
   })
 
