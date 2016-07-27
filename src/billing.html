@@ -17,101 +17,242 @@
           <span>link2</span>
           <span>link3</span>
         </nav>
-        <div>
-          <p>shopping cart</p>
+        <div class="well well-sm">
+          <p></p>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th id="item">Items</th>
+                <th id="quantity">Qty</th>
+                <th id="cost">Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stuff1</td>
+                <td>3</td>
+                <td>150</td>
+
+              </tr>
+              <tr>
+                <td>Stuff2</td>
+                <td>2</td>
+                <td>30</td>
+              </tr>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td id="sub">Sum</td>
+                  <td id="total">$180</td>
+                </tr>
+              </tfoot>
+            </table>
+          </table>
         </div>
       </header>
       <div>
         <h1>checkout</h1>
       </div>
-      <div class="shipping">
-        <p id="shippingForm">Shipping</p>
-        <form class="shipping">
-          <label for="firstName">First Name</label>
-          <input type="text" class="shippingFirstName">
-          <label for="lastName">Last Name</label>
-          <input type="text" class="shippingLastName">
-          <label for="company">Company</label>
-          <input type="text" class="shippingCompany">
-          <label for="addressLine1">Address Line 1</label>
-          <input type="text" class="shippingAddressLine1">
-          <label for="addressLine2">Address Line 2</label>
-          <input type="text" class="shippingAddressLine2">
-          <label for="city">City</label>
-          <input type="text" class="shippingCity">
-          <label for="state">State</label>
-          <select class="shippingState">
-          </select>
-          <label for="zip">ZIP Code</label>
-          <input type="text" class="shippingZip">
-          <input type="checkbox" id="isSameAsShipping">Copy Shipping to Billing
-        </form>
-        <p id="billingForm">Billing</p>
-        <form class="shipping">
-          <label for="firstName">First Name</label>
-          <input type="text" class="billingFirstName">
-          <label for="lastName">Last Name</label>
-          <input type="text" class="billingLastName">
-          <label for="company">Company</label>
-          <input type="text" class="billingCompany">
-          <label for="addressLine1">Address Line 1</label>
-          <input type="text" class="billingAddressLine1">
-          <label for="addressLine2">Address Line 2</label>
-          <input type="text" class="billingAddressLine2">
-          <label for="city">City</label>
-          <input type="text" class="billingCity">
-          <label for="state">State</label>
-          <select class="billingState">
-          </select>
-          <label for="zip">ZIP Code</label>
-          <input type="text" class="billingZip">
-        </form>
-        <p id="creditCardForm">Credit Card Information</p>
-        <form class="payment">
-          <label for="creditCardNumber">Credit Card Number</label>
-          <input type="text" class="creditCardNumber">
-          <label for="expiration">Expiration Date</label>
-          <input type="text" class="expiration">
-          <label for="CVC">CVC</label>
-          <input type="text" class="cvc">
-          <input type="submit" value="Purchase">
-        </form>
-      </div>
-    </div>
+        <div class="row">
+            <div class="col-xs-6">
+              <div class="panel panel-default">
+                <div class="panel-heading" id="shippingPanel">Shipping
+                </div>
+                <div class="panel-body floating_box">
+                  <form class="shipping">
+                    <div class="form-group">
+                      <label for="firstName" class="col-lg-2 control-label">First Name</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingFirstName form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingLastName form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="company" class="col-lg-2 control-label">Company</label>
+                      <input type="text" class="shippingCompany form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
+                      <input type="text" class="shippingAddressLine1 form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
+                      <input type="text" class="shippingAddressLine2 form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="col-lg-1 control-label">City</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingCity form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <div class="col-lg-2">
+                        <select class="shippingState form-control">
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <div class="col-lg-3">
+                        <input type="text" class="shippingZip form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <input type="checkbox" id="isSameAsShipping">Copy Shipping to Billing
+                      </div>
+                    </div>
+                </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xs-6 panel">
+              <div class="panel-default">
+                <div class="panel-heading" id="billingPanel">Billing
+                </div>
+                <div class="panel-body">
+                  <form class="billing">
+                    <div class="form-group">
+                      <label for="firstName" class="col-lg-2 control-label">First Name</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="billingFirstName form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="billingLastName form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="company" class="col-lg-2 control-label">Company</label>
+                      <input type="text" class="billingCompany form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
+                      <input type="text" class="billingAddressLine1 form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
+                      <input type="text" class="billingAddressLine2 form-control">
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="col-lg-1 control-label">City</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="billingCity form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <div class="col-lg-2">
+                        <select class="billingState form-control">
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <div class="col-lg-3">
+                        <input type="text" class="billingZip form-control">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <label for="blank">
+                      </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <div id="creditCardForm" class="col-xs-12 panel panel-default">
+                <div class="panel-heading" id="creditCard">Credit Card Info
+                </div>
+                <div class="panel-body">
+                  <form class="billing">
+                    <div class="form-group">
+                      <label for="creditCardNumber" class="col-lg-2 control-label">Credit Card Number</label>
+                      <input type="text" class="creditCardNumber col-lg-2">
+                    </div>
+                    <div class="form-group">
+                      <label for="expDate" class="col-lg-2 control-label">Exp Date</label>
+                      <input type="text" class="expDate ol-lg-2">
+                    </div>
+                    <div class="form-group">
+                      <label for="zip" class="col-lg-2 control-label">Zip Code</label>
+                      <input type="text" class="billingZip col-lg-2">
+                    </div>
+                    <div class="form-group">
+                      <label for="cvc" class="col-lg-2 control-label">CVC</label>
+                      <input type="text" class="cvc col-lg-2">
+                    </div>
+                    <div class="form-group">
+                      <input type="submit" value="Purchase">
+                    </div>
+                </form>
+                </div>
+            </div>
+          </div>
+
     <footer>
       <div class="footerSource">
           <div class="row">
-            <div id="map_column" class="col-xs-3">
-              <p>visit us</p>
-              <img src="./image/galvanize_location.png" alt="Visit Us!" height="350" width="350">
+            <div id="mapColumn" class="col-xs-3 panel panel-default">
+                <div class="panel-heading" id="visitTitle">visit us
+                </div>
+                <div class="panel-body">
+                  <p id="contactNumber">303-555-1111</p>
+                  <img src="./image/galvanize_location.png" alt="Visit Us!" height="300" width="300">
+                </div>
             </div>
-            <div id="myAccount" class="col-xs-4">
-              <p>My Account</p>
+
+
+            <div id="myAccount" class="col-xs-3 panel panel-default">
+              <div class="panel-heading">my account
+              </div>
+              <div class="panel-body">
               <ul>
                 <li>Order History</p>
                 <li>Gift Certificates</p>
                 <li>Shipping Options</p>
               </ul>
             </div>
-            <div id="services" class="col-xs-3">
-              <p>Services</p>
-              <ul>
-                <li>Customer Service</p>
-                <li>Our Guarantee</p>
-                <li>Returns</p>
-                <li>Gift Certificates</p>
-              </ul>
-            </div>
-            <div id="companyInfo" class="col-xs-2">
-              <p>Company Info</p>
-              <ul>
-                <li>About Us</p>
-                <li>Our Team</p>
-                <li>Community Support</p>
-                <li>Careers</p>
-              </ul>
-            </div>
           </div>
+
+          <div id="services" class="col-xs-3 panel panel-default">
+            <div class="panel-heading">services
+            </div>
+            <div class="panel-body">
+            <ul>
+              <li>Customer Service</li>
+              <li>Our Guarantee</li>
+              <li>Returns</li>
+              <li>Gift Certificates</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="companyInfo" class="col-xs-3 panel panel-default">
+          <div class="panel-heading">company info
+          </div>
+          <div class="panel-body">
+          <ul>
+            <li>About Us</li>
+            <li>Our Team</li>
+            <li>Community Support</li>
+            <li>Careers</li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
