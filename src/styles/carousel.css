@@ -1,22 +1,19 @@
 #header {
   height: 200px;
   background-color: cyan;
-  border: solid 1px black;
 }
 #site-heading {
-  border: solid 1px black;
   height: 100%;
   padding-top: 50px;
+  margin-left: 10px
 }
 #cart {
   font-size: 28px;
   text-align: right;
-  border: solid 1px black;
   height: 100%;
 }
 #navbar {
   height: 100%;
-  border: solid 1px black;
 }
 .nav-pills{
   margin-left: 20%;
@@ -63,6 +60,11 @@ li:last-of-type{
   max-height: 100%;
   max-width: auto;
 }
-#imgLeft {
-  text-align: left;
+#signup img{
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+}
+#signup h1{
+  font-size: 28px
 }
