@@ -34,9 +34,11 @@
           <span class="glyphicon glyphicon-shopping-cart"></span>
         </div>
       </header>
-      <div id="main">
-        <div class="jumbotron">
-          <h1>CAROUSEL!</h1>
+      <div id="main" class="container-fluid row text-center">
+        <div class="carousel col-md-12">
+          <button id="imgLeft" class="btn btn-default"type="button" name="button"><</button>
+          <img class="carouselPic" src="" alt="pic" />
+          <button id="imgRight" class="btn btn-default"type="button" name="button">></button>
         </div>
       </div>
       <div id="signup" class="col-md-10 col-md-offset-1">
@@ -51,7 +53,7 @@
         </article>
       </div>
       <div class="row">
-        <form class="input-group col-md-8 col-md-offset-2">
+        <form class="input-group form-group col-md-8 col-md-offset-2">
             <label class="sr-only" for="email">Email address</label>
             <input class="form-control"type="email" name="email" placeholder="Enter email here">
             <span class="input-group-btn">
