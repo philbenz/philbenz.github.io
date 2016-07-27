@@ -1,0 +1,48 @@
+#header {
+  height: 170px;
+  background-color: cyan;
+  border: solid 1px black;
+}
+#site-heading {
+  border: solid 1px black;
+  height: 100%;
+  padding-top: 35px;
+}
+#cart {
+  font-size: 28px;
+  text-align: right;
+  border: solid 1px black;
+  height: 100%;
+}
+#navbar {
+  height: 100%;
+  border: solid 1px black;
+}
+.nav-pills{
+  margin-left: 20%;
+  margin-top: 13%;
+}
+#footer{
+  margin-bottom: 15px;
+  padding-top: 20px;
+  height: 170px;
+  background-color: cyan;
+  border: solid 1px black;
+}
+li {
+  float: none;
+  display: inline;
+  margin-right: 15px;
+  text-align: center;
+}
+li:last-of-type{
+  margin-right: 0;
+}
+.glyphicon{
+  display: inline-block;
+  margin-top: 60px;
+  margin-right: 15px
+}
+.cart p{
+  display: inline-block;
+}
