@@ -1,6 +1,6 @@
 #header {
   height: 200px;
-  background-color: cyan;
+  background-color: gray;
 }
 #site-heading {
   height: 100%;
@@ -23,7 +23,7 @@
   margin-bottom: 0px;
   padding-top: 20px;
   height: 400px;
-  background-color: cyan;
+  background-color: gray;
   border: solid 1px black;
 }
 li {
@@ -54,17 +54,35 @@ li:last-of-type{
   height: 480px;
   overflow: hidden;
   margin-bottom: 20px;
-  background-color: cyan;
+  background-color: gray;
 }
 .carouselPic {
   max-height: 100%;
   max-width: auto;
+}
+#imgLeft{
+  height: 100%;
+}
+#imgRight{
+  height: 100%;
+}
+#signup{
+  margin-bottom: 20px;
 }
 #signup img{
   max-height: 100%;
   max-width: 100%;
   padding-top: 20px;
 }
-#signup h1{
-  font-size: 18px
+.prodDiv{
+  height: 300px;
+}
+.prodArt {
+  background-color: gray;
+}
+.description {
+  padding-bottom: 20px;
+}
+.description h2{
+  font-size: 20px;
 }
