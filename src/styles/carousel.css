@@ -1,22 +1,19 @@
 #header {
   height: 200px;
-  background-color: cyan;
-  border: solid 1px black;
+  background-color: gray;
 }
 #site-heading {
-  border: solid 1px black;
   height: 100%;
   padding-top: 50px;
+  margin-left: 10px
 }
 #cart {
   font-size: 28px;
   text-align: right;
-  border: solid 1px black;
   height: 100%;
 }
 #navbar {
   height: 100%;
-  border: solid 1px black;
 }
 .nav-pills{
   margin-left: 20%;
@@ -26,7 +23,7 @@
   margin-bottom: 0px;
   padding-top: 20px;
   height: 400px;
-  background-color: cyan;
+  background-color: gray;
   border: solid 1px black;
 }
 li {
@@ -57,12 +54,35 @@ li:last-of-type{
   height: 480px;
   overflow: hidden;
   margin-bottom: 20px;
-  background-color: cyan;
+  background-color: gray;
 }
 .carouselPic {
   max-height: 100%;
   max-width: auto;
 }
-#imgLeft {
-  text-align: left;
+#imgLeft{
+  height: 100%;
+}
+#imgRight{
+  height: 100%;
+}
+#signup{
+  margin-bottom: 20px;
+}
+#signup img{
+  max-height: 100%;
+  max-width: 100%;
+  padding-top: 20px;
+}
+.prodDiv{
+  height: 300px;
+}
+.prodArt {
+  background-color: gray;
+}
+.description {
+  padding-bottom: 20px;
+}
+.description h2{
+  font-size: 20px;
 }
