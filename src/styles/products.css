@@ -1,0 +1,27 @@
+.productHolder{
+  float: right;
+  border: 2px solid red;
+}
+
+.productDiv{
+  width: 30%;
+  height: 350px;
+  border: 2px solid blue;
+  margin: 10px;
+  float: left;
+}
+
+img{
+  width: 60%;
+  height: 50%;
+  border: 1px solid purple;
+}
+
+aside div{
+  margin-top: 45px;
+}
+
+
+li{
+  margin: 5px;
+}

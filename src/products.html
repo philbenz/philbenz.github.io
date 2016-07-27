@@ -2,11 +2,39 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/products.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <div class="productHolder row col-md-9">
+
+    </div>
+    <aside class="filters col-md-3">
+      <div class="priceRange">
+        <form id="filtereds">
+          <input type="radio" name="filtered" value="0-25">$0-25</input>
+          <input type="radio" name="filtered" value="25-50">$25-50</input>
+          <input type="radio" name="filtered" value="50-100">$50-100</input>
+          <!-- <input type="radio" name="filtered" value="100-150">$100-150</input> -->
+        </form>
+
+        <!-- <ul>
+          <li>$0 - $25</li>
+          <li>$25 - $50</li>
+          <li>$50 - $100</li>
+          <li>$100 - $150</li>
+        </ul> -->
+      </div>
+      <div class="highLow">
+        <form id="highorlow" action="index.html" method="post">
+          <input type="radio" name='highlow' id="lowHigh" checked="checked">Low to High</input>
+          <input type="radio" name='highlow' id="highLow">High to Low</input>
+        </form>
+
+      </div>
+    </aside>
     <script type="text/javascript" src="scripts/products.js"></script>
   </body>
 </html>
