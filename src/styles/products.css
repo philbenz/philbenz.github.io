@@ -1,27 +1,51 @@
 .productHolder{
   float: right;
-  border: 2px solid red;
+  background-color: lightgrey;
 }
 
 .productDiv{
+  background-color: white;
   width: 30%;
   height: 350px;
   border: 2px solid blue;
   margin: 10px;
+  padding: 10px;
   float: left;
 }
 
 img{
   width: 60%;
   height: 50%;
-  border: 1px solid purple;
 }
 
 aside div{
   margin-top: 45px;
 }
 
-
 li{
   margin: 5px;
+}
+/*Header styling*/
+h1{
+  color: white;
+  float: left;
+  left: 20px;
+}
+form{
+  display: inline-block;
+}
+.links{
+  padding-top: 20px;
+  margin: auto;
+  /*width: 300px;*/
+  margin-top: 19px;
+  text-align: center;
+}
+
+.glyphicon{
+  color: white;
+  float: right;
+  font-size: 40px;
+  display: inline-block;
+  padding-right: 6%;
 }

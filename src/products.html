@@ -8,28 +8,40 @@
     <title></title>
   </head>
   <body>
+    <nav class="navbar navbar-default">
+      <div class="idk">
+      <h1>eCommerce Site</h1>
+      <div class="links nav-center">
+      <form action="index.html">
+        <input type="submit" class='btn btn-default center-block' value="Home">
+      </form>
+      <form action="products.html">
+        <input type="submit" class='btn btn-default center-block' value="Products">
+      </form>
+      <form action="billing.html">
+        <input type="submit" class='btn btn-default center-block' value="Billing">
+      </form>
+      <span class="glyphicon glyphicon-shopping-cart"></span>
+      </div>
+
+      </div>
+    </nav>
+
     <div class="productHolder row col-md-9">
 
     </div>
     <aside class="filters col-md-3">
       <div class="priceRange">
         <form id="filtereds">
-          <input type="radio" name="filtered" value="0-25">$0-25</input>
-          <input type="radio" name="filtered" value="25-50">$25-50</input>
-          <input type="radio" name="filtered" value="50-100">$50-100</input>
-          <!-- <input type="radio" name="filtered" value="100-150">$100-150</input> -->
+          <input type="radio" name="filtered" value="0-25">$0-25</input><br>
+          <input type="radio" name="filtered" value="25-50">$25-50</input><br>
+          <input type="radio" name="filtered" value="50-100">$50-100</input><br>
+          <!-- <input type="radio" name="filtered" value="0-1000000">All</input> -->
         </form>
-
-        <!-- <ul>
-          <li>$0 - $25</li>
-          <li>$25 - $50</li>
-          <li>$50 - $100</li>
-          <li>$100 - $150</li>
-        </ul> -->
       </div>
       <div class="highLow">
         <form id="highorlow" action="index.html" method="post">
-          <input type="radio" name='highlow' id="lowHigh" checked="checked">Low to High</input>
+          <input type="radio" name='highlow' id="lowHigh" checked="checked">Low to High</input><br>
           <input type="radio" name='highlow' id="highLow">High to Low</input>
         </form>
 
