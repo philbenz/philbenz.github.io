@@ -2,12 +2,82 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/billing.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
-
+      <header>
+        <div>
+          <p class="logo">ecommerce site</p>
+        </div>
+        <nav>
+          <span>link1</span>
+          <span>link2</span>
+          <span>link3</span>
+        </nav>
+        <div>
+          <p>shopping cart</p>
+        </div>
+      </header>
+      <div>
+        <h1>checkout</h1>
+      </div>
+      <div class="shipping">
+        <p id="shippingForm">Shipping</p>
+        <form class="shipping">
+          <label for="firstName">First Name</label>
+          <input type="text" class="shippingFirstName">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="shippingLastName">
+          <label for="company">Company</label>
+          <input type="text" class="shippingCompany">
+          <label for="addressLine1">Address Line 1</label>
+          <input type="text" class="shippingAddressLine1">
+          <label for="addressLine2">Address Line 2</label>
+          <input type="text" class="shippingAddressLine2">
+          <label for="city">City</label>
+          <input type="text" class="shippingCity">
+          <label for="state">State</label>
+          <input type="select" class="shippingState">
+          <label for="zip">ZIP Code</label>
+          <input type="text" class="shippingZip">
+          <input type="checkbox" id="isSameAsShipping">Copy Shipping to Billing
+        </form>
+        <p id="billingForm">Billing</p>
+        <form class="shipping">
+          <label for="firstName">First Name</label>
+          <input type="text" class="billingFirstName">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="billingLastName">
+          <label for="company">Company</label>
+          <input type="text" class="billingCompany">
+          <label for="addressLine1">Address Line 1</label>
+          <input type="text" class="billingAddressLine1">
+          <label for="addressLine2">Address Line 2</label>
+          <input type="text" class="billingAddressLine2">
+          <label for="city">City</label>
+          <input type="text" class="billingCity">
+          <label for="state">State</label>
+          <input type="select" class="billingState">
+          <label for="zip">ZIP Code</label>
+          <input type="text" class="billingZip">
+        </form>
+        <p id="creditCardForm">Credit Card Information</p>
+        <form class="payment">
+          <label for="creditCardNumber">Credit Card Number</label>
+          <input type="text" class="creditCardNumber">
+          <label for="expiration">Expiration Date</label>
+          <input type="text" class="expiration">
+          <label for="CVC">CVC</label>
+          <input type="text" class="cvc">
+          <input type="submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="scripts/billing.js"></script>
   </body>
 </html>
