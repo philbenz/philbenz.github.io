@@ -5,6 +5,8 @@ $(document).on('ready', function() {
     //sanity check
     console.log('sanity check with billing js');
 
+    buildStatesSelector();
+
     //jQuery for the movie title
     $('button').click('submit', function( event ) {
       //ensure that the submit doesn't go to a server
@@ -38,4 +40,30 @@ $(document).on('ready', function() {
         $('.billingZip').val('');
       }
     });
+
+    //Validate Expiration Date
+    // - make sure that expiration date fits the convention of "MM/YYYY" - for reasons of convenience - years will be four digits and not two.
+    // - make sure that that the expiration date is equal or greater than today's date
+
   });
+
+  function buildStatesSelector() {
+    usStates.forEach(function(s){
+      //limit the window of the state list
+      $('.shippingState').attr('size', '1');
+      $('.billingState').attr('size', '1');
+
+      $('.shippingState').append('<option>' + s.abbreviation + '</option>');
+      $('.billingState').append('<option>' + s.abbreviation + '</option>');
+    });
+
+    return;
+  }
+
+  function conformExpirationDate(date) {
+
+  }
+
+  function validateExpirationDate(conformed_date) {
+
+  }
