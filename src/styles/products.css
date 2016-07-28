@@ -1,37 +1,54 @@
 .productHolder{
   float: right;
-  background-color: lightgrey;
+  background-color: grey;
 }
 
 .productDiv{
+  position: relative;
   background-color: white;
   width: 30%;
-  height: 350px;
-  border: 2px solid blue;
+  height: 500px;
   margin: 10px;
   padding: 10px;
   float: left;
 }
 
-img{
-  width: 60%;
-  height: 50%;
+.austinImg{
+  width: 80%;
+  height: 43%;
 }
 
-aside div{
+aside .Austin{
   margin-top: 45px;
 }
 
-li{
+.Hi{
   margin: 5px;
 }
+
+.AddCart{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: limegreen;
+  height: 30px;
+  width: 100%;
+  display: none;
+}
+.bar{
+  border: 1px solid grey;
+  height: 30px;
+  width: 15px;
+  margin: 1px;
+  display: inline-block;
+}
 /*Header styling*/
-h1{
+.austinH1{
   color: white;
   float: left;
   left: 20px;
 }
-form{
+.austinsForms{
   display: inline-block;
 }
 .links{
@@ -42,10 +59,10 @@ form{
   text-align: center;
 }
 
-.glyphicon{
+.austinUL{
   color: white;
   float: right;
-  font-size: 40px;
+  font-size: 25px;
   display: inline-block;
   padding-right: 6%;
 }
