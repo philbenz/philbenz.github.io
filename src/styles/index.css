@@ -39,9 +39,9 @@
 }
 li {
   float: none;
-  display: inline;
   margin-right: 15px;
   text-align: center;
+  list-style: none;
 }
 li:last-of-type{
   margin-right: 0;
