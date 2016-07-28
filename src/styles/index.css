@@ -30,21 +30,17 @@
 #main{
   display: none;
 }
-#footer{
+footer{
   margin-bottom: 0px;
   padding-top: 20px;
-  height: 400px;
+  height: 340px;
   background-color: gray;
-  border: solid 1px black;
 }
-li {
+.nav .nav-pills li {
   float: none;
   display: inline;
   margin-right: 15px;
   text-align: center;
-}
-li:last-of-type{
-  margin-right: 0;
 }
 .glyphicon{
   display: inline-block;
@@ -101,7 +97,7 @@ li:last-of-type{
   padding-top: 20px;
 }
 .prodDiv{
-  height: 200px;
+  height: 300px;
 }
 .prodArt {
   background-color: gray;
