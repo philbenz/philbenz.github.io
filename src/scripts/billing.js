@@ -28,40 +28,47 @@ $(document).on('ready', function() {
       if (!Stripe.card.validateCardNumber(ccNum)) {
           error = true;
           //reportError('The credit card number appears to be invalid.');
-          console.log('credit card number is invalid');
+          var message = 'credit card number is invalid';
       }
 
       // Validate the CVC:
       if (!Stripe.card.validateCVC(cvcNum)) {
           error = true;
           //reportError('The CVC number appears to be invalid.');
-          console.log('The CVC number appears to be invalid.');
+          var message = 'The CVC number appears to be invalid.';
       }
 
       // Validate the expiration:
       if (!Stripe.card.validateExpiry(expMonth, expYear)) {
-          console.log('expiration date' + expMonth +'/' + expYear);
           error = true;
-          console.log('The expiration date appears to be invalid.');
+          var message = 'The expiration date appears to be invalid.';
 
-          //reportError('The expiration date appears to be invalid.');
+          console.log('in the validate expiration');
+
       }
 
+      if (error === true) {
+          console.log('in the response.error handler');
+          $('#valid-callout').css('background-color', 'red');
+          $('#valid-callout').text(message);
+          $('#valid-callout').css('visibility', 'visible');
+        } else {
+
           if (!error) {
-        // Get the Stripe token:
-        Stripe.card.createToken({
-            number: ccNum,
-            cvc: cvcNum,
-            exp_month: expMonth,
-            exp_year: expYear
-        }, stripeResponseHandler);
+            // Get the Stripe token:
+            Stripe.card.createToken({
+                number: ccNum,
+                cvc: cvcNum,
+                exp_month: expMonth,
+                exp_year: expYear
+            }, stripeResponseHandler);
+          }
      }
 
      function stripeResponseHandler(status, response) {
        console.log('in stripe response handler');
           if (response.error) {
               console.log('in the response.error handler');
-              var message = "Payment Failed";
               $('#valid-callout').css('background-color', 'red');
               $('#valid-callout').text(message);
               $('#valid-callout').css('visibility', 'visible');
