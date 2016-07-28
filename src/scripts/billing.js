@@ -9,25 +9,12 @@ $(document).on('ready', function() {
 
     buildStatesSelector();
 
+    checkShoppingCart();
+
     var mapInfo = initialize();
 
     //set the map in index.html
     var map = new google.maps.Map(document.getElementById('googleMap'), mapInfo);
-
-    function codeAddress() {
-    var address = document.getElementById('address').value;
-    geocoder.geocode( { 'address': address}, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        map.setCenter(results[0].geometry.location);
-        var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location
-        });
-      } else {
-        alert('Geocode was not successful for the following reason: ' + status);
-      }
-    });
-  }
 
 
     $('#purchaseButton').click('submit', function( event ) {
@@ -134,6 +121,7 @@ $(document).on('ready', function() {
 
 });
 
+
 //this function is being used to populate the mapProp object for the map.
 function initialize() {
 
@@ -157,4 +145,16 @@ function buildStatesSelector() {
     });
 
     return;
+  }
+
+  function checkShoppingCart() {
+    $('#shoppingCartTable').append('<thead>');
+    $('#shoppingCartTable').append('<th id="item">Items</th>');
+    $('#shoppingCartTable').append('<th id="item">Quantity</th>');
+    $('#shoppingCartTable').append('<th></th>');
+    $('#shoppingCartTable').append('<th id="cost">Cost</th>');
+    $('#shoppingCartTable').append('<th></th>');
+    $('#shoppingCartTable').append('</thead>');
+    $('#shoppingCartTable').append('<tbody>');
+    $('#shoppingCartTable').append('</tbody>');
   }
