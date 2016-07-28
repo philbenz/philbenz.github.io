@@ -31,19 +31,24 @@ $(document).on('ready', function() {
       // Validate the number:
       if (!Stripe.card.validateCardNumber(ccNum)) {
           error = true;
-          reportError('The credit card number appears to be invalid.');
+          //reportError('The credit card number appears to be invalid.');
+          console.log('credit card number is invalid');
       }
 
       // Validate the CVC:
       if (!Stripe.card.validateCVC(cvcNum)) {
           error = true;
-          reportError('The CVC number appears to be invalid.');
+          //reportError('The CVC number appears to be invalid.');
+          console.log('The CVC number appears to be invalid.');
       }
 
       // Validate the expiration:
       if (!Stripe.card.validateExpiry(expMonth, expYear)) {
+          console.log('expiration date' + expMonth +'/' + expYear);
           error = true;
-          reportError('The expiration date appears to be invalid.');
+          console.log('The expiration date appears to be invalid.');
+
+          //reportError('The expiration date appears to be invalid.');
       }
 
           if (!error) {
@@ -58,12 +63,13 @@ $(document).on('ready', function() {
 
      function stripeResponseHandler(status, response) {
        console.log('in stripe response handler');
-     }
-
-    if (response.error) {
-        reportError(response.error.message);
-      } else { // No errors, submit the form.
-    }
+          if (response.error) {
+              console.log('in the response.error handler');
+              reportError(response.error.message);
+            } else { // No errors, submit the form.
+              console.log('no errors submit the form.');
+          }
+      }
 
 
     //ensure that shipping copies to billing
