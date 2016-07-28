@@ -121,3 +121,6 @@ footer{
 .teaserLink:hover{
   color: white;
 }
+.panel {
+  height: 80%
+}
