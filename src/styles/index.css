@@ -34,7 +34,6 @@ body {
   display: none;
 }
 footer{
-  margin-bottom: 0px;
   padding-top: 20px;
   height: 440px;
   background-color: gray;
@@ -126,7 +125,11 @@ footer{
   color: white;
 }
 .panel {
-  height: 80%
+  height: 95%;
+  margin-bottom: 0px
+}
+.panel-default {
+  margin-bottom: 0px;
 }
 .cartIcon {
   text-decoration: none !important;
@@ -137,4 +140,7 @@ footer{
 }
 .lowPanel {
   height: 100%;
+}
+.gMap {
+  max-width: 100%;
 }

@@ -105,18 +105,20 @@
               </span>
           </form>
         </div>
-        <footer>
+        <footer class="container-fluid">
               <div class="lowPanel col-xs-3">
                 <div id="mapColumn" class="panel panel-default">
                     <div class="panel-heading" id="visitTitle">visit us
                     </div>
                     <div class="panel-body">
                       <p id="contactNumber">303-555-1111</p>
-                      <div id="googleMap" style="width:300px;height:180px;"></div>
+                      <div id="googleMap">
+                        <a target="_blank" href="https://www.google.com/maps/@39.7325765,-104.9914602,15z">
+                      <img class="gMap" src= "./images/staticmap.png" alt="map" />
+                    </a></div>
                     </div>
                 </div>
               </div>
-
               <div class="lowPanel col-xs-3">
                 <div id="myAccount" class="panel panel-default">
                   <div class="panel-heading">Specials
@@ -131,7 +133,6 @@
                 </div>
               </div>
             </div>
-
               <div class="lowPanel col-xs-3">
               <div id="services" class="panel panel-default">
                 <div class="panel-heading">services
@@ -146,7 +147,6 @@
               </div>
             </div>
           </div>
-
             <div class="lowPanel col-xs-3">
             <div id="companyInfo" class="panel panel-default">
               <div class="panel-heading">company info
@@ -162,15 +162,10 @@
           </div>
         </div>
         </footer>
-
          <script src="http://maps.googleapis.com/maps/api/js?v3"></script>
-
       <script type="text/javascript" src="scripts/productInfo.js">
-
       </script>
       <script type="text/javascript" src="scripts/index.js"></script>
-
-
     </body>
   </div>
 </html>
