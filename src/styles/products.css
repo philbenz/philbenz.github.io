@@ -8,7 +8,7 @@
   background-color: white;
   width: 30%;
   height: 500px;
-  margin: 10px;
+  margin: 16px;
   padding: 10px;
   float: left;
 }
@@ -73,12 +73,12 @@ aside .Austin{
   background-color: gray;
   border: solid 1px black;
 }
-li {
+/*li {
   float: none;
   display: inline;
   margin-right: 15px;
   text-align: center;
-}
+}*/
 li:last-of-type{
   margin-right: 0;
 }
@@ -98,6 +98,8 @@ li:last-of-type{
   height: 450px;
   margin-bottom: 20px;
 }
-.Hi{
-
+#myFooter{
+  padding-top: 20px;
+  height: 340px;
+  background-color: grey;
 }
