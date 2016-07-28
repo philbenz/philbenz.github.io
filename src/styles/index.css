@@ -12,6 +12,10 @@
   font-size: 28px;
   text-align: right;
   height: 100%;
+  display: none;
+}
+.nav {
+  display: none;
 }
 #navbar {
   height: 100%;
@@ -19,6 +23,9 @@
 .nav-pills{
   margin-left: 20%;
   margin-top: 70px;
+}
+#site-heading h1{
+  display: none;
 }
 #main{
   display: none;
@@ -63,6 +70,7 @@ li:last-of-type{
 .carouselPic {
   max-height: 100%;
   max-width: auto;
+  display: none;
 }
 #imgLeft{
   height: 100%;
@@ -71,6 +79,7 @@ li:last-of-type{
   border: none;
   focus: none;
   padding-bottom: 6%;
+  display: none;
 }
 #imgRight{
   width: 100px;
@@ -78,6 +87,7 @@ li:last-of-type{
   background-color: gray;
   border: none;
   padding-bottom: 6%;
+  display: none;
 }
 .btn:focus{
   outline: none !important;

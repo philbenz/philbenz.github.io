@@ -67,8 +67,18 @@ function changeImg () {
   }, 5000)
 }
 function fadeInAll () {
-  $('#fade').fadeIn(700)
+  $('#fade').fadeIn(800)
   $('#header').fadeIn(400)
-  $('#main').fadeIn(500)
+  $('#main').fadeIn(400)
+  setTimeout(function () {
+    $('#site-heading h1').fadeIn(600)
+    $('.nav').fadeIn(600)
+    $('#cart').fadeIn(600)
+    setTimeout(function () {
+      $('.carouselPic').fadeIn(600)
+      $('#imgLeft').fadeIn(600)
+      $('#imgRight').fadeIn(600)
+    }, 200)
+  }, 300)
 
 }
