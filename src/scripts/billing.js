@@ -1,11 +1,7 @@
 $(document).on('ready', function() {
-    //prevent the event default
-    //event.preventDefault();
 
     //sanity check
     console.log('sanity check with billing js');
-    //[[cost, quantity, ]]
-    // var shoppingItems = [[]]
 
     //Stripe Public Keys
     //  test publishable: pk_test_hs0sBTr45jm1KOmFEE4bDAOU
@@ -65,12 +61,22 @@ $(document).on('ready', function() {
        console.log('in stripe response handler');
           if (response.error) {
               console.log('in the response.error handler');
-              reportError(response.error.message);
+              var message = "Payment Failed";
+              $('#valid-callout').css('background-color', 'red');
+              $('#valid-callout').text(message);
+              $('#valid-callout').css('visibility', 'visible');
             } else { // No errors, submit the form.
               console.log('no errors submit the form.');
+              var message = "Payment Complete - Thank You!"
+              $('#valid-callout').css('background-color', 'green');
+              $('#valid-callout').text(message);
+              $('#valid-callout').css('visibility', 'visible');
+
+              return;
           }
       }
 
+    });
 
     //ensure that shipping copies to billing
     //ensure that when uncheck billing is left blank
@@ -97,20 +103,14 @@ $(document).on('ready', function() {
         $('.billingZip').val('');
       }
     });
+});
 
-    //Validate Expiration Date
-    // - make sure that expiration date fits the convention of "MM/YYYY" - for reasons of convenience - years will be four digits and not two.
-    // - make sure that that the expiration date is equal or greater than today's date
 
-    });
-  });
-
-  function buildStatesSelector() {
+function buildStatesSelector() {
     usStates.forEach(function(s){
       //limit the window of the state list
       $('.shippingState').attr('size', '1');
       $('.billingState').attr('size', '1');
-
       $('.shippingState').append('<option>' + s.abbreviation + '</option>');
       $('.billingState').append('<option>' + s.abbreviation + '</option>');
     });
@@ -126,11 +126,8 @@ $(document).on('ready', function() {
     $('#shoppingCartTable').append('<th id="cost">Cost</th>');
     $('#shoppingCartTable').append('<th></th>');
     $('#shoppingCartTable').append('</thead>');
-
     $('#shoppingCartTable').append('<tbody>');
     $('#shoppingCartTable').append('</tbody>');
-
-
   }
 
   // <tbody>
