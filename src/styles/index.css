@@ -101,7 +101,7 @@ li:last-of-type{
   padding-top: 20px;
 }
 .prodDiv{
-  height: 300px;
+  height: 200px;
 }
 .prodArt {
   background-color: gray;
@@ -117,4 +117,11 @@ li:last-of-type{
 }
 .section {
   height: 100%
+}
+.teaserLink {
+  text-decoration: none !important;
+  color: #2C3E50
+}
+.teaserLink:hover{
+  color: white;
 }
