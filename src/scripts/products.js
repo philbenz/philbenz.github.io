@@ -1,5 +1,4 @@
 $(function () {
-  console.log('hello!');
   var promise = Promise.resolve($.ajax({
     url:'http://galvanize-student-apis.herokuapp.com/gcommerce/products/',
     method: 'GET'
@@ -11,7 +10,6 @@ $(function () {
     console.log(imgs.length);
     var products = []
     var myData = data
-    console.log(myData);
     for(var i = 0; i < data.length; i++){
       products.push('<div class="productDiv text-center" id="product' + i + '"><img class="austinImg" src="' + imgs[i] +'"/><h3>' + Names[i] + '</h3> <p>' + data[i].description + '</p><p class="valueOf">' + data[i].price + '</p><div class="rating"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b1"></div></div><div class="AddCart">Add to Cart</div>')
       $('.productHolder').append(products[i])
@@ -21,7 +19,6 @@ $(function () {
       AddCartNum()
     }
     var allProducts = $('.productDiv')
-console.log(products);
     function sortNumber(a,b) {
       return a - b;
     }
@@ -39,7 +36,6 @@ console.log(products);
         objLowHigh[arrLowHigh[i]] = i+1
       }
       arrLowHigh = arrLowHigh.sort(sortNumber)
-      console.log(arrLowHigh);
       arrLowHigh.forEach(function(price){
         $('.productHolder').append(products[objLowHigh[price]-1])
       })
@@ -95,10 +91,18 @@ console.log(products);
 
   function AddCartNum() {
     $('.AddCart').click(function() {
+      var productPrice = parseFloat(this.parentNode.getElementsByClassName('valueOf')[0].textContent.substr(1))
+      var productName = this.parentNode.getElementsByTagName('h3')[0].textContent
       $(this).fadeOut(100).fadeIn(10)
-
-      // .delay(200).css('background-color', 'limegreen')
       $('.badge').text(parseInt($('.badge').text())+1)
+      cartContents.push({[productName]: productPrice})
+      console.log(getCartContents())
     })
   }
 })
+
+var cartContents = []
+
+function getCartContents(){
+  return cartContents
+}
