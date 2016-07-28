@@ -7,6 +7,8 @@ $(document).on('ready', function() {
 
     buildStatesSelector();
 
+    checkShoppingCart();
+
     //jQuery for the movie title
     $('button').click('submit', function( event ) {
       //ensure that the submit doesn't go to a server
@@ -60,6 +62,52 @@ $(document).on('ready', function() {
     return;
   }
 
+  function checkShoppingCart() {
+    $('#shoppingCartTable').append('<thead>');
+    $('#shoppingCartTable').append('<th id="item">Items</th>');
+    $('#shoppingCartTable').append('<th id="item">Quantity</th>');
+    $('#shoppingCartTable').append('<th></th>');
+    $('#shoppingCartTable').append('<th id="cost">Cost</th>');
+    $('#shoppingCartTable').append('<th></th>');
+    $('#shoppingCartTable').append('</thead>');
+
+    $('#shoppingCartTable').append('<tbody>');
+    $('#shoppingCartTable').append('</tbody>');
+
+    
+  }
+
+  // <tbody>
+  //   <tr>
+  //     <td>Ping Pong Paddles</td>
+  //     <td>3</td>
+  //     <td></td>
+  //     <td>150</td>
+  //     <td></td>
+  //   </tr>
+  //   <tr>
+  //     <td>Super Coated Teflon Ninja Net</td>
+  //     <td>2</td>
+  //     <td></td>
+  //     <td>30</td>
+  //     <td></td>
+  //   </tr>
+  //   <tf>
+  //     <td></td>
+  //     <td></td>
+  //     <td></td>
+  //     <td></td>
+  //     <td></td>
+  //   </tr>
+  //   <tfoot>
+  //     <tr>
+  //       <td></td>
+  //       <td></td>
+  //       <td id="sub">Total</td>
+  //       <td id="total">$180</td>
+  //       <td></td>
+  //     </tr>
+  //   </tfoot>
   function conformExpirationDate(date) {
 
   }
