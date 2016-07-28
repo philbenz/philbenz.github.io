@@ -9,10 +9,40 @@ tfoot {
 
 li{
 
-  padding-top: 20px;
-  padding-bottom: 5px;
+  /*padding-top: 20px;*/
+  padding-right: 5px;
   padding-left: 10px;
 
+}
+
+.billingLabel {
+  margin-right: 200px;
+}
+
+.creditCardNumber {
+  margin-right: 200px;
+}
+
+.expMonth {
+  margin-right: 200px;
+}
+
+.expYear {
+  margin-right: 200px;
+}
+
+.cvc {
+  margin-right: 200px;
+}
+
+
+.billing {
+  float: none;
+  display: inline;
+}
+
+#addressLine1 {
+  padding: 30px;
 }
 
 #contactNumber {
