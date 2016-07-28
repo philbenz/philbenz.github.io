@@ -62,13 +62,11 @@ li{
 }
 li {
   float: none;
-  display: inline;
+  list-style: none;
   margin-right: 15px;
   text-align: center;
 }
-li:last-of-type{
-  margin-right: 0;
-}
+
 .glyphicon{
   display: inline-block;
   margin-top: 72px;
