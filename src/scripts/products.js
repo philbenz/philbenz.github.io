@@ -92,9 +92,9 @@ console.log(products);
       $(this).children().last().fadeOut()
     })
   }
-  function AddCartNum(){
-    $('.AddCart').click(function(){
-      console.log($(this));
+
+  function AddCartNum() {
+    $('.AddCart').click(function() {
       $(this).fadeOut(100).fadeIn(10)
 
       // .delay(200).css('background-color', 'limegreen')
