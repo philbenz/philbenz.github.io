@@ -36,8 +36,9 @@ body {
 footer{
   margin-bottom: 0px;
   padding-top: 20px;
-  height: 340px;
+  height: 440px;
   background-color: gray;
+  border: solid 1px black
 }
 .nav .nav-pills li {
   float: none;
@@ -133,4 +134,7 @@ footer{
 }
 .cartIcon:hover{
   color: white;
+}
+.lowPanel {
+  height: 100%;
 }

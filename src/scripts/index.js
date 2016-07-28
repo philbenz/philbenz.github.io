@@ -1,11 +1,18 @@
 $(function () {
+
+  var mapInfo = initialize();
+
+     //set the map in index.html
+     var map = new google.maps.Map(document.getElementById('googleMap'), mapInfo);
+
+
+
   promise.then(function (stuff) {
     var tacocat = stuff
     $('.carouselPic').attr('src', imgArr[0])
+
     fadeInAll()
     changeImg()
-
-    console.log(tacocat);
 
     var i = 0
 
@@ -88,4 +95,14 @@ $(function () {
 
     }
   })
+  function initialize() {
+
+  var mapProp = {
+      center:new google.maps.LatLng(+39.7330659, -104.9922190),
+      zoom: 15,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+
+  return mapProp;
+}
 })
