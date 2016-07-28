@@ -6,7 +6,7 @@ $(function () {
   .then(function(data){
     var AustinData = data
     for(var i = 0; i < data.length; i++){
-      products.push('<div class="productDiv text-center" id="product' + i + '"><img class="austinImg" src="' + imgs[i] +'"/><h3>' + Names[i] + '</h3> <p>' + data[i].description + '</p><pj class="valueOf">' + data[i].price + '</p><div class="rating"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b1"></div></div><div class="AddCart">Add to Cart</div>')
+      products.push('<div class="productDiv text-center" id="product' + i + '"><img class="austinImg" src="' + imgs[i] +'"/><h3>' + Names[i] + '</h3> <p>' + data[i].description + '</p><p class="valueOf">' + data[i].price + '</p><div class="rating"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b1"></div></div><div class="AddCart">Add to Cart</div>')
       $('.productHolder').append(products[i])
       AustinData[i].productImages = imgs[i]
       AustinData[i].productNames = Names[i]
