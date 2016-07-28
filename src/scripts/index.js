@@ -1,4 +1,5 @@
 $(function () {
+  fadeInAll()
   changeImg()
 })
 
@@ -11,7 +12,7 @@ for(var j = 0; j <= 2; j++) {
 }
 
 $('#imgLeft').on('click', function () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+  $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
   i--
   if (i < 0) {
     i = imgArr.length - 1
@@ -20,7 +21,7 @@ $('#imgLeft').on('click', function () {
 })
 
 $('#imgRight').on('click', function () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+  $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
   i++
   if (i > imgArr.length - 1) {
     i = 0
@@ -51,17 +52,33 @@ $('#input').on('input', function (event) {
     }
   })
 function changeImg () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeIn(500)
+    $('.carouselPic').attr('src', imgArr[i])
   setTimeout(function () {
     if ((i < imgArr.length - 1) && (i >= 0)) {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i++
-        $('.carouselPic').attr('src', imgArr[i]).fadeIn(700)
+        $('.carouselPic').attr('src', imgArr[i]).fadeIn(800)
     } else {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i = 0
-        $('.carouselPic').attr('src', imgArr[0]).fadeIn(700)
+        $('.carouselPic').attr('src', imgArr[0]).fadeIn(800)
     }
       changeImg()
-  }, 5000)
+  }, 6000)
+}
+function fadeInAll () {
+  $('#fade').fadeIn(800)
+  $('#header').fadeIn(400)
+  $('#main').fadeIn(400)
+  setTimeout(function () {
+    $('#site-heading h1').fadeIn(600)
+    $('.nav').fadeIn(600)
+    $('#cart').fadeIn(600)
+    setTimeout(function () {
+      $('.carouselPic').fadeIn(600)
+      $('#imgLeft').fadeIn(600)
+      $('#imgRight').fadeIn(600)
+    }, 200)
+  }, 300)
+
 }
