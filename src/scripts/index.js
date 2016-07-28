@@ -52,19 +52,19 @@ $('#input').on('input', function (event) {
     }
   })
 function changeImg () {
-  $('.carouselPic').attr('src', imgArr[i])
+    $('.carouselPic').attr('src', imgArr[i])
   setTimeout(function () {
     if ((i < imgArr.length - 1) && (i >= 0)) {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i++
-        $('.carouselPic').attr('src', imgArr[i]).fadeIn(700)
+        $('.carouselPic').attr('src', imgArr[i]).fadeIn(800)
     } else {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i = 0
-        $('.carouselPic').attr('src', imgArr[0]).fadeIn(700)
+        $('.carouselPic').attr('src', imgArr[0]).fadeIn(800)
     }
       changeImg()
-  }, 5000)
+  }, 6000)
 }
 function fadeInAll () {
   $('#fade').fadeIn(800)
