@@ -115,3 +115,6 @@ li:last-of-type{
 #fade {
   display: none;
 }
+.section {
+  height: 100%
+}
