@@ -41,9 +41,9 @@ footer{
 }
 .nav .nav-pills li {
   float: none;
-  display: inline;
   margin-right: 15px;
   text-align: center;
+  list-style: none;
 }
 .glyphicon{
   display: inline-block;
