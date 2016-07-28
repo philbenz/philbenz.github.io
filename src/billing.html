@@ -6,21 +6,27 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/billing.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Ping Pong!</title>
   </head>
   <body>
-      <header>
-        <div>
-          <p class="logo">ecommerce site</p>
-        </div>
-        <nav>
-          <a href="index.html">home</a>
-          <a href="products.html">products</a>
-          <a href="billing.html">billing</a>
-        </nav>
-
-      </header>
-      <div class="container">
+      <div id="container"class="container-fluid col-md-12">
+        <header id="header">
+          <div id="site-heading" class="row col-md-4">
+            <h1>eCommerce Site</h1>
+          </div>
+          <div id="navbar" class="navbar col-md-4">
+              <ul class="nav nav-pills">
+                <li class="active"role="presentation"><a href="index.html">Home</a></li>
+                <li class="active"role="presentation"><a href="products.html">Products</a></li>
+                <li class="active"role="presentation"><a href="billing.html">Billing</a></li>
+              </ul>
+          </div>
+          <div id="cart" class="cart col-md-4">
+            <p class="cartItems"></h2>
+            <span class="glyphicon glyphicon-shopping-cart"></span>
+          </div>
+        </header>
+      <div class="row">
         <div class="well">
           <p class="shoppingCartTitle">Shopping Cart</p>
           <table class="table table-hover" id="shoppingCartTable">
@@ -30,7 +36,6 @@
       <div>
         <h1>checkout</h1>
       </div>
-        <div class="container">
           <div class="row">
             <div class="col-xs-6">
               <div class="panel panel-default">
@@ -190,8 +195,9 @@
             </div>
           </div>
         </div>
+      </div>
     <footer>
-      <div class="container">
+      <div class="row">
           <div class="row">
             <div class="col-xs-3">
             <div id="mapColumn" class="panel panel-default">
