@@ -130,10 +130,25 @@ var Names = ['Tube Table','Glowing Table','Glass Table', 'WTF Table', 'Pool Tabl
 var products = []
 var cartContents = []
 
+function productImgs() {
+  return imgs
+}
+
+function NamesOf() {
+  return Names
+}
+
 function productsContent() {
   return products
 }
 
 function getCartContents(){
   return cartContents
+}
+
+module.exports = {
+  productImgs: productImgs,
+  NamesOf: NamesOf,
+  productsContent: productsContent,
+  getCartContents: getCartContents
 }
