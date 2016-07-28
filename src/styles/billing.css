@@ -40,20 +40,6 @@ tfoot {
   font-weight: bold;
 }
 
-.titleName {
-  font-weight: bold;
-}
-
-li{
-  padding-right: 5px;
-  padding-left: 10px;
-  float: none;
-  list-style: none;
-  margin-right: 15px;
-  text-align: center;
-
-}
-
 .billingLabel {
   margin-right: 200px;
 }
@@ -97,13 +83,12 @@ footer{
   height: 440px;
   background-color: gray;
 }
+.panel {
+  height: 95%;
 }
 .lowPanel {
   height: 100%;
 }
 .gMap {
   max-width: 100%;
-}
-.panel {
-  height: 95%;
 }
