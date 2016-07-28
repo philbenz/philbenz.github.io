@@ -9,8 +9,8 @@ var promise = Promise.resolve($.ajax({
     tacocat[i].productNames = Names[i]
   }
   return tacocat
-
 })
+
 var imgArr = ["./images/valley.jpg", "./images/el-capitan-mountain.jpg", "./images/Mountain-wallpaper-HD.jpeg"]
 var imgs = ['https://s-media-cache-ak0.pinimg.com/236x/f7/de/ed/f7deedb246866ed4b0b2aab9bd3b7676.jpg',
 'http://2.bp.blogspot.com/-u66toyzKzUo/VCStwUNksjI/AAAAAAAABH0/h2WAJYGiasY/s1600/Rainbow%2Blighted%2Bping%2Bpong%2Btable.jpg',
