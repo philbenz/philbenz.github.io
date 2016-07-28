@@ -164,10 +164,3 @@ $(document).on('ready', function() {
   //       <td></td>
   //     </tr>
   //   </tfoot>
-  function conformExpirationDate(date) {
-
-  }
-
-  function validateExpirationDate(conformed_date) {
-
-  }
