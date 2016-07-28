@@ -17,7 +17,7 @@ $('#imgLeft').on('click', function () {
   if (i < 0) {
     i = imgArr.length - 1
   }
-  $('.carouselPic').attr('src', imgArr[i]).fadeIn(500)
+  $('.carouselPic').attr('src', imgArr[i]).delay(10).fadeIn(500)
 })
 
 $('#imgRight').on('click', function () {
@@ -26,7 +26,7 @@ $('#imgRight').on('click', function () {
   if (i > imgArr.length - 1) {
     i = 0
   }
-  $('.carouselPic').attr('src', imgArr[i]).fadeIn(500)
+  $('.carouselPic').attr('src', imgArr[i]).delay(10).fadeIn(500)
 })
 
 $('#input').on('input', function (event) {
@@ -57,11 +57,11 @@ function changeImg () {
     if ((i < imgArr.length - 1) && (i >= 0)) {
         $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i++
-        $('.carouselPic').attr('src', imgArr[i]).fadeIn(800)
+        $('.carouselPic').attr('src', imgArr[i]).delay(10).fadeIn(800)
     } else {
         $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
         i = 0
-        $('.carouselPic').attr('src', imgArr[0]).fadeIn(800)
+        $('.carouselPic').attr('src', imgArr[0]).delay(10).fadeIn(800)
     }
       changeImg()
   }, 8000)
