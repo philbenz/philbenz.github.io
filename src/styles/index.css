@@ -1,6 +1,7 @@
 #header {
   height: 200px;
   background-color: gray;
+  display: none;
 }
 #site-heading {
   height: 100%;
@@ -18,6 +19,9 @@
 .nav-pills{
   margin-left: 20%;
   margin-top: 70px;
+}
+#main{
+  display: none;
 }
 #footer{
   margin-bottom: 0px;
@@ -97,4 +101,7 @@ li:last-of-type{
 }
 .description h2{
   font-size: 20px;
+}
+#fade {
+  display: none;
 }

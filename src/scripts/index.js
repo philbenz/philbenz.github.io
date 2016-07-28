@@ -1,4 +1,5 @@
 $(function () {
+  fadeInAll()
   changeImg()
 })
 
@@ -11,7 +12,7 @@ for(var j = 0; j <= 2; j++) {
 }
 
 $('#imgLeft').on('click', function () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+  $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
   i--
   if (i < 0) {
     i = imgArr.length - 1
@@ -20,7 +21,7 @@ $('#imgLeft').on('click', function () {
 })
 
 $('#imgRight').on('click', function () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+  $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
   i++
   if (i > imgArr.length - 1) {
     i = 0
@@ -51,17 +52,23 @@ $('#input').on('input', function (event) {
     }
   })
 function changeImg () {
-  $('.carouselPic').attr('src', imgArr[i]).fadeIn(500)
+  $('.carouselPic').attr('src', imgArr[i])
   setTimeout(function () {
     if ((i < imgArr.length - 1) && (i >= 0)) {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
         i++
         $('.carouselPic').attr('src', imgArr[i]).fadeIn(700)
     } else {
-        $('.carouselPic').attr('src', imgArr[i]).fadeOut(5)
+        $('.carouselPic').attr('src', imgArr[i]).fadeOut(1)
         i = 0
         $('.carouselPic').attr('src', imgArr[0]).fadeIn(700)
     }
       changeImg()
   }, 5000)
+}
+function fadeInAll () {
+  $('#fade').fadeIn(700)
+  $('#header').fadeIn(400)
+  $('#main').fadeIn(500)
+
 }
