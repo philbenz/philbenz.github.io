@@ -98,8 +98,17 @@ li:last-of-type{
   height: 450px;
   margin-bottom: 20px;
 }
-#myFooter{
+footer{
   padding-top: 20px;
-  height: 340px;
-  background-color: grey;
+  height: 440px;
+  background-color: gray;
+}
+.lowPanel {
+  height: 100%;
+}
+.gMap {
+  max-width: 100%;
+}
+.panel {
+  height: 95%;
 }

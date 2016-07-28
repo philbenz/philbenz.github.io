@@ -37,7 +37,6 @@ footer{
   padding-top: 20px;
   height: 440px;
   background-color: gray;
-  border: solid 1px black
 }
 .nav .nav-pills li {
   float: none;
@@ -126,10 +125,6 @@ footer{
 }
 .panel {
   height: 95%;
-  margin-bottom: 0px
-}
-.panel-default {
-  margin-bottom: 0px;
 }
 .cartIcon {
   text-decoration: none !important;
