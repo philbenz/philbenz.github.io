@@ -1,3 +1,6 @@
+body {
+  background-image: url(../images/sayagata-400px.png);
+}
 #header {
   height: 200px;
   background-color: gray;
@@ -31,10 +34,10 @@
   display: none;
 }
 footer{
-  margin-bottom: 0px;
   padding-top: 20px;
-  height: 340px;
+  height: 440px;
   background-color: gray;
+  border: solid 1px black
 }
 .nav .nav-pills li {
   float: none;
@@ -120,4 +123,24 @@ footer{
 }
 .teaserLink:hover{
   color: white;
+}
+.panel {
+  height: 95%;
+  margin-bottom: 0px
+}
+.panel-default {
+  margin-bottom: 0px;
+}
+.cartIcon {
+  text-decoration: none !important;
+  color: #2C3E50
+}
+.cartIcon:hover{
+  color: white;
+}
+.lowPanel {
+  height: 100%;
+}
+.gMap {
+  max-width: 100%;
 }
