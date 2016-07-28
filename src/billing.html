@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/billing.css">
@@ -19,16 +20,18 @@
         </nav>
 
       </header>
+      <div class="container">
         <div class="well">
           <p class="shoppingCartTitle">Shopping Cart</p>
-          <table class="table table-hover" id="shoppingCartTable">  
+          <table class="table table-hover" id="shoppingCartTable">
           </table>
         </div>
-
+      </div>
       <div>
         <h1>checkout</h1>
       </div>
-        <div class="row">
+        <div class="container">
+          <div class="row">
             <div class="col-xs-6">
               <div class="panel panel-default">
                 <div class="panel-heading titleName" id="shippingPanel">Shipping
@@ -165,8 +168,8 @@
                       <input type="text" class="expDate ol-lg-2">
                     </div>
                     <div class="form-group">
-                      <label for="billingAccountName" class="col-lg-2 control-label">Account Name</label>
-                      <input type="text" class="BillingAccountName col-lg-2">
+                      <label for="billingAccountName" class="col-lg-2 control-label">Expiration Year</label>
+                      <input type="text" class="expYear col-lg-2">
                     </div>
                     <div class="form-group">
                       <label for="cvc" class="col-lg-2 col-lg-offset-2 control-label">CVC</label>
@@ -176,7 +179,7 @@
                       <label>
                     </div>
                     <div class="form-group col-lg-10">
-                      <input type="submit" value="Purchase">
+                      <input type="submit" value="Purchase" id="purchaseButton">
                     </div>
                     <div class="form-group col-lg-10 col-lg-offset-5">
                       <label value="Purchase">
@@ -185,9 +188,9 @@
                 </div>
             </div>
           </div>
-
+        </div>
     <footer>
-      <div class="footerSource">
+      <div class="container">
           <div class="row">
             <div class="col-xs-3">
             <div id="mapColumn" class="panel panel-default">
@@ -249,6 +252,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">Stripe.setPublishableKey('pk_test_hs0sBTr45jm1KOmFEE4bDAOU');</script>
     <script type="text/javascript" src="scripts/billing.js"></script>
     <script type="text/javascript" src="scripts/states.js"></script>
   </body>
