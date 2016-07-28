@@ -30,21 +30,17 @@
 #main{
   display: none;
 }
-#footer{
+footer{
   margin-bottom: 0px;
   padding-top: 20px;
-  height: 400px;
+  height: 340px;
   background-color: gray;
-  border: solid 1px black;
 }
-li {
+.nav .nav-pills li {
   float: none;
   margin-right: 15px;
   text-align: center;
   list-style: none;
-}
-li:last-of-type{
-  margin-right: 0;
 }
 .glyphicon{
   display: inline-block;
@@ -114,4 +110,14 @@ li:last-of-type{
 }
 #fade {
   display: none;
+}
+.section {
+  height: 100%
+}
+.teaserLink {
+  text-decoration: none !important;
+  color: #2C3E50
+}
+.teaserLink:hover{
+  color: white;
 }
