@@ -12,6 +12,7 @@ $(function () {
       DivHover()
       AddCartNum()
     }
+    productArray(data)
     var allProducts = $('.productDiv')
 
     $('#highorlow').change(function() {
@@ -142,13 +143,10 @@ function productsContent() {
   return products
 }
 
-function getCartContents(){
-  return cartContents
+function productArray(data){
+  return data
 }
 
-module.exports = {
-  productImgs: productImgs,
-  NamesOf: NamesOf,
-  productsContent: productsContent,
-  getCartContents: getCartContents
+function getCartContents(){
+  return cartContents
 }
