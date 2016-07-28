@@ -1,0 +1,68 @@
+.productHolder{
+  float: right;
+  background-color: grey;
+}
+
+.productDiv{
+  position: relative;
+  background-color: white;
+  width: 30%;
+  height: 500px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+}
+
+.austinImg{
+  width: 80%;
+  height: 43%;
+}
+
+aside .Austin{
+  margin-top: 45px;
+}
+
+.Hi{
+  margin: 5px;
+}
+
+.AddCart{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: limegreen;
+  height: 30px;
+  width: 100%;
+  display: none;
+}
+.bar{
+  border: 1px solid grey;
+  height: 30px;
+  width: 15px;
+  margin: 1px;
+  display: inline-block;
+}
+/*Header styling*/
+.austinH1{
+  color: white;
+  float: left;
+  left: 20px;
+}
+.austinsForms{
+  display: inline-block;
+}
+.links{
+  padding-top: 20px;
+  margin: auto;
+  /*width: 300px;*/
+  margin-top: 19px;
+  text-align: center;
+}
+
+.austinUL{
+  color: white;
+  float: right;
+  font-size: 25px;
+  display: inline-block;
+  padding-right: 6%;
+}

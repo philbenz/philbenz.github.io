@@ -2,11 +2,57 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-XYCjB+hFAjSbgf9yKUgbysEjaVLOXhCgATTEBpCqT1R3jvG5LGRAK5ZIyRbH5vpX" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/products.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
+    <div class="container-fluid">
+
+    <nav class="navbar navbar-default">
+      <div class="idk">
+      <h1 class="austinH1">eCommerce Site</h1>
+      <div class="links nav-center">
+      <form class="austinsForms" action="index.html">
+        <input type="submit" class='btn btn-default center-block' value="Home">
+      </form>
+      <form class="austinsForms" action="products.html">
+        <input type="submit" class='btn btn-default center-block' value="Products">
+      </form>
+      <form class="austinsForms" action="billing.html">
+        <input type="submit" class='btn btn-default center-block' value="Billing">
+      </form>
+      <ul class="austinUL nav nav-pills">
+        <li class="Hi active"><a href='billing.html'>Cart <span class="badge">0</span></a></li>
+      </ul>
+      </div>
+
+      </div>
+    </nav>
+
+    <div class="productHolder row col-md-9">
+
+    </div>
+    <aside class="filters col-md-3">
+      <div class="priceRange Austin">
+        <form class="austinsForms" id="filtereds">
+          <input type="radio" name="filtered" value="0-25">$0-25</input><br>
+          <input type="radio" name="filtered" value="25-50">$25-50</input><br>
+          <input type="radio" name="filtered" value="50-100">$50-100</input><br>
+          <!-- <input type="radio" name="filtered" value="0-1000000">All</input> -->
+        </form>
+      </div>
+      <div class="highLow Austin">
+        <form class="austinsForms" id="highorlow" action="index.html" method="post">
+          <input type="radio" name='highlow' id="lowHigh" checked="checked">Low to High</input><br>
+          <input type="radio" name='highlow' id="highLow">High to Low</input>
+        </form>
+
+      </div>
+    </aside>
+
+  </div>
     <script type="text/javascript" src="scripts/products.js"></script>
   </body>
 </html>
