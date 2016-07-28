@@ -1,0 +1,25 @@
+
+tfoot {
+  font-weight: bold;
+}
+
+.titleName {
+  font-weight: bold;
+}
+
+li{
+
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+}
+
+#contactNumber {
+  text-align: center;
+}
+
+.shoppingCartTitle {
+  font-weight: bold;
+  font-size: 18px;
+}
