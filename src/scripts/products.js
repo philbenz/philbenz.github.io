@@ -9,6 +9,7 @@ $(function () {
       products.push('<div class="productDiv text-center" id="product' + i + '"><img class="austinImg" src="' + imgs[i] +'"/><h3>' + Names[i] + '</h3> <p>' + data[i].description + '</p><pj class="valueOf">' + data[i].price + '</p><div class="rating"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b1"></div></div><div class="AddCart">Add to Cart</div>')
       $('.productHolder').append(products[i])
       AustinData[i].productImages = imgs[i]
+      AustinData[i].productNames = Names[i]
       loadLow(data)
       barHover()
       DivHover()
@@ -65,7 +66,6 @@ $(function () {
       AddCartNum()
     }
     })
-
   })
 
   function barHover(){
@@ -91,7 +91,10 @@ $(function () {
       $(this).fadeOut(100).fadeIn(10)
       $('.badge').text(parseInt($('.badge').text())+1)
       cartContents.push({[productName]: productPrice})
+      // createTable(cartContents)
+      console.log(cartContents);
     })
+
   }
 
   function sortNumber(a,b) {
@@ -114,6 +117,26 @@ $(function () {
     arrLowHigh.forEach(function(price){
       $('.productHolder').append(products[objLowHigh[price]-1])
     })
+  }
+
+  function createTable(data){
+    $('.idk').empty()
+    $('.idk').append('<table>  <thead>  <th>Item</th> <th>Quantity</th> <th>Price</th>  </thead> <tbody class="realData"> </tbody>  </table>')
+
+    for(var i = 0; i < data.length; i++){
+      $('.realData').append('<tr id="row'+i+'"> </tr>')
+    }
+    for(var i = 0; i < 3; i++){
+      $('tr').append('<td></td>')
+    }
+    for(var i = 0; i < data.length; i++){
+      for(key in data[i]){
+        $('#row' + i +' td:nth-child(1)').html(key)
+        $('#row' + i +' td:nth-child(2)').html('1')
+        $('#row' + i +' td:nth-child(3)').html(data[i][key])
+      }
+      // $('#row' + i +' td:nth-child(2)').html(data[i].productNames)
+    }
   }
 })
 

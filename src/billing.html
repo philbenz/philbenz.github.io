@@ -26,63 +26,59 @@
             <span class="glyphicon glyphicon-shopping-cart"></span>
           </div>
         </header>
-      <div class="row">
-        <div class="well">
-          <p class="shoppingCartTitle">Shopping Cart</p>
-          <table class="table table-hover" id="shoppingCartTable">
-          </table>
-        </div>
-      </div>
-      <div> 
+
+      <div>
       </div>
           <div class="row">
             <div class="col-xs-6">
-              <div class="panel panel-default">
-                <div class="panel-heading titleName" id="shippingPanel">Shipping
+              <div class="">
+                <div class="titleName" id="shippingPanel">Shipping
                 </div>
-                <div class="panel-body">
+
                   <form class="shipping">
+
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">First Name</label>
-                      <div class="col-lg-2">
-                        <input type="text" class="shippingFirstName form-control input-sm">
-                      </div>
+                      <label for="firstName" class="col-lg-4">First Name</label>
+                      <label for="lastName" class="col-lg-4">Last Name</label>
+                      <label for="company" class="col-lg-4">Company</label>
                     </div>
+
+
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
-                      <div class="col-lg-2">
-                        <input type="text" class="shippingLastName form-control input-sm">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="company" class="col-lg-2 control-label">Company</label>
-                      <div class="col-lg-2">
-                      <input type="text" class="shippingCompany form-control input-sm">
-                    </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
-                      <input type="text" class="shippingAddressLine1 form-control input-sm">
-                    </div>
-                    <div class="form-group">
-                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
-                      <input type="text" class="shippingAddressLine2 form-control input-sm">
-                    </div>
-                    <div class="form-group">
-                      <label for="city" class="col-lg-1 control-label">City</label>
                       <div class="col-lg-4">
-                        <input type="text" class="shippingCity form-control input-sm">
+                        <input type="text" class="shippingFirstName">
+                      </div>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingLastName">
+                      </div>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingCompany">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="addressLine1" class="col-lg-6">Address Line 1</label>
+                      <input type="text" class="shippingAddressLine1">
+                    </div>
+                    <div class="form-group">
+                      <label for="addressLine2" class="col-lg-4">Address Line 2</label>
+                      <input type="text" class="shippingAddressLine2">
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="col-lg-1">City</label>
+                      <div class="col-lg-4">
+                        <input type="text" class="shippingCity">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <label for="state" class="col-lg-1">State</label>
                       <div class="col-lg-2">
                         <select class="shippingState form-control">
                         </select>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <label for="zip" class="col-lg-1">Zip Code</label>
                       <div class="col-lg-3">
                         <input type="text" class="shippingZip form-control input-sm">
                       </div>
@@ -93,55 +89,55 @@
                       </div>
                     </div>
                 </form>
-                </div>
+
               </div>
             </div>
 
             <div class="col-xs-6">
-              <div class="panel panel-default">
-                <div class="panel-heading titleName" id="billingPanel">Billing
+              <div class="">
+                <div class="titleName"  id="billingPanel">Billing
                 </div>
-                <div class="panel-body">
+                <div class="">
                   <form class="billing">
                     <div class="form-group">
-                      <label for="firstName" class="col-lg-2 control-label">First Name</label>
+                      <label for="firstName" class="col-lg-2">First Name</label>
                       <div class="col-lg-4">
                         <input type="text" class="billingFirstName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                      <label for="lastName" class="col-lg-2">Last Name</label>
                       <div class="col-lg-4">
                         <input type="text" class="billingLastName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="company" class="col-lg-2 control-label">Company</label>
+                      <label for="company" class="col-lg-2">Company</label>
                       <input type="text" class="billingCompany form-control">
                     </div>
                     <div class="form-group">
-                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
+                      <label for="addressLine1" class="col-lg-4">Address Line 1</label>
                       <input type="text" class="billingAddressLine1 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
+                      <label for="addressLine2" class="col-lg-4">Address Line 2</label>
                       <input type="text" class="billingAddressLine2 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="city" class="col-lg-1 control-label">City</label>
+                      <label for="city" class="col-lg-1">City</label>
                       <div class="col-lg-4">
                         <input type="text" class="billingCity form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <label for="state" class="col-lg-1">State</label>
                       <div class="col-lg-2">
                         <select class="billingState form-control">
                         </select>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <label for="zip" class="col-lg-1">Zip Code</label>
                       <div class="col-lg-3">
                         <input type="text" class="billingZip form-control input-sm">
                       </div>
@@ -158,50 +154,68 @@
           </div>
 
           <div class="row">
-            <div id="creditCardForm" class="col-xs-12 panel panel-default">
-                <div class="panel-heading titleName" id="creditCard">Credit Card Info
+            <div id="creditCardForm" class="col-xs-12">
+                <div class=" titleName" id="creditCard">Credit Card Info
                 </div>
-                <div class="panel-body">
+                <div class="">
                   <form class="billing">
-                    <div class="form-group">
-                      <label for="creditCardNumber" class="col-lg-2 control-label">Credit Card Number</label>
-                      <input type="text" class="creditCardNumber col-lg-2">
+                    <!-- <div class="form-group">
+                      <label for="creditCardNumber" class=">Credit Card Number</label>
+                      <input type="text" class="creditCardNumber"  size="16">
                     </div>
                     <div class="form-group">
-                      <label for="expMonth" class="col-lg-2 col-lg-offset-2 control-label">Exp Date</label>
-                      <input type="text" class="expMonth ol-lg-2">
+                      <label for="expMonth" class=">Exp Month</label>
+                      <input type="text" class="expMonth" size="2">
                     </div>
                     <div class="form-group">
-                      <label for="billingAccountName" class="col-lg-2 control-label">Expiration Year</label>
-                      <input type="text" class="expYear col-lg-2">
+                      <label for="expYear" class=">Expiration Year</label>
+                      <input type="text" class="expYear" size="4">
                     </div>
                     <div class="form-group">
-                      <label for="cvc" class="col-lg-2 col-lg-offset-2 control-label">CVC</label>
-                      <input type="text" length="4" class="cvc col-lg-2">
+                      <label for="cvc" class="">CVC</label>
+                      <input type="text" size="3" class="cvc">
                     </div>
-                    <div class="form-group col-lg-10 col-lg-offset-5">
-                      <label>
+ -->
+
+                   <div class="form-group">
+                     <label for="creditCardNumber" class="billingLabel">Credit Card Number</label>
+                     <label for="expMonth" class=" billingLabel">Exp Month</label>
+                     <label for="expYear" class=" billingLabel">Expiration Year</label>
+                     <label for="cvc" class=" billingLabel">CVC</label>
+                   </div>
+
+
+                    <div class="form-group">
+                      <input type="text" class="creditCardNumber"  size="20">
+                      <input type="text" class="expMonth" size="2">
+                      <input type="text" class="expYear" size="4">
+                      <input type="text" size="3" class="cvc">
                     </div>
-                    <div class="form-group col-lg-10">
+
+
+
+                    <div class="form-group">
                       <input type="submit" value="Purchase" id="purchaseButton">
                     </div>
+
                     <div class="form-group">
-                      <div class="col-lg-10 col-lg-offset-5">
-                          <label class="col-lg-4 label label-default" id="valid-callout"></label>
+                      <div class="">
+                          <label class="label label-default" id="valid-callout"></label>
                     </div>
+
                 </form>
                 </div>
             </div>
           </div>
         </div>
       </div>
-    <footer>
+    <footer id="footer">
       <div class="row">
             <div class="col-xs-3">
-            <div id="mapColumn" class="panel panel-default">
-                <div class="panel-heading" id="visitTitle">visit us
+            <div id="mapColumn" class="">
+                <div class="" id="visitTitle">visit us
                 </div>
-                <div class="panel-body">
+                <div class="">
                   <p id="contactNumber">303-555-1111</p>
                   <div id="googleMap" style="width:300px;height:180px;"></div>
                 </div>
@@ -209,25 +223,25 @@
           </div>
 
           <div class="col-xs-3">
-            <div id="myAccount" class="panel panel-default">
-              <div class="panel-heading">Specials
+            <div id="myAccount" class="">
+              <div class="">Specials
               </div>
-              <div class="panel-body">
+              <div class="">
               <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
+                <li><img src="./images/balls.jpeg" height="50px" width="50px">Balls</li>
+                <li><img src="./images/team.jpeg" height="50px" width="50px">Teams</li>
+                <li><img src="./images/paddles.jpeg" height="50px" width="50px">Paddles</li>
+                <li><img src="./images/luggage.jpeg" height="50px" width="50px">Luggage</li>
               </ul>
             </div>
           </div>
         </div>
 
           <div class="col-xs-3">
-          <div id="services" class="panel panel-default">
-            <div class="panel-heading">services
+          <div id="services" class="">
+            <div class="">services
             </div>
-            <div class="panel-body">
+            <div class="">
             <ul>
               <li>Customer Service</li>
               <li>Our Guarantee</li>
@@ -239,10 +253,10 @@
       </div>
 
         <div class="col-xs-3">
-        <div id="companyInfo" class="panel panel-default">
-          <div class="panel-heading">company info
+        <div id="companyInfo" class="">
+          <div class="">company info
           </div>
-            <div class="panel-body">
+            <div class="">
               <ul>
                 <li>About Us</li>
                 <li>Our Team</li>

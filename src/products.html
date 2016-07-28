@@ -10,26 +10,21 @@
   <body>
     <div class="container-fluid">
 
-    <nav class="navbar navbar-default">
-      <div class="idk">
-      <h1 class="austinH1">eCommerce Site</h1>
-      <div class="links nav-center">
-      <form class="austinsForms" action="index.html">
-        <input type="submit" class='btn btn-default center-block' value="Home">
-      </form>
-      <form class="austinsForms" action="products.html">
-        <input type="submit" class='btn btn-default center-block' value="Products">
-      </form>
-      <form class="austinsForms" action="billing.html">
-        <input type="submit" class='btn btn-default center-block' value="Billing">
-      </form>
-      <ul class="austinUL nav nav-pills">
+    <header id="header">
+      <div id="site-heading" class="row col-md-4">
+        <h1>eCommerce Site</h1>
+      </div>
+      <div id="navbar" class="navbar col-md-4">
+          <ul class="nav nav-pills">
+            <li class="active"role="presentation"><a href="index.html">Home</a></li>
+            <li class="active"role="presentation"><a href="products.html">Products</a></li>
+            <li class="active"role="presentation"><a href="billing.html">Billing</a></li>
+          </ul>
+      </div>
+      <div id="cart" class="cart col-md-4">
         <li class="Hi active"><a href='billing.html'>Cart <span class="badge">0</span></a></li>
-      </ul>
       </div>
-
-      </div>
-    </nav>
+    </header>
 
     <div class="productHolder row col-md-9">
 
@@ -53,7 +48,10 @@
     </aside>
 
   </div>
-  <script type="text/javascript"src="productInfo.js"></script>
+  <div class="idk">
+
+  </div>
+  <script type="text/javascript" src="./scripts/productInfo.js"></script>
     <script type="text/javascript" src="scripts/products.js"></script>
   </body>
 </html>
