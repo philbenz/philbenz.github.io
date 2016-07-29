@@ -1,8 +1,45 @@
+body {
+  background-image: url(../images/sayagata-400px.png);
+}
+/*Header styling*/
+#header {
+  height: 200px;
+  background-color: gray;
+}
+#site-heading {
+  height: 100%;
+  padding-top: 50px;
+  margin-left: 10px
+}
+#cart {
+  font-size: 28px;
+  text-align: right;
+  height: 100%;
+}
+
+#navbar {
+  height: 100%;
+}
+.nav-pills{
+  margin-left: 20%;
+  margin-top: 70px;
+}
+.glyphicon{
+  display: inline-block;
+  margin-top: 72px;
+  margin-right: 15px
+}
+.cartIcon {
+  text-decoration: none !important;
+  color: #2C3E50;
+}
+.cartIcon:hover{
+  color: white;
+}
 .productHolder{
   float: right;
   background-color: grey;
 }
-
 .productDiv{
   position: relative;
   background-color: white;
@@ -12,7 +49,6 @@
   padding: 10px;
   float: left;
 }
-
 .austinImg{
   width: 80%;
   height: 43%;
@@ -42,64 +78,24 @@ aside .Austin{
   margin: 1px;
   display: inline-block;
 }
-/*Header styling*/
-#header {
-  height: 200px;
-  background-color: gray;
-}
-#site-heading {
-  height: 100%;
-  padding-top: 50px;
-  margin-left: 10px
-}
-#cart {
-  font-size: 28px;
-  text-align: right;
-  height: 100%;
-}
 
-#navbar {
-  height: 100%;
-}
-.nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
-}
-
-#footer{
-  margin-bottom: 0px;
-  padding-top: 20px;
-  height: 400px;
-  background-color: gray;
-  border: solid 1px black;
-}
-/*li {
-  float: none;
-  display: inline;
-  margin-right: 15px;
-  text-align: center;
-}*/
-li:last-of-type{
-  margin-right: 0;
-}
 .Hi a{
   color: rgb(44, 62, 80);
   display: inline-block;
   margin-top: 72px;
   margin-right: 15px
 }
-.cart p{
-  display: inline-block;
-}
-.product {
-  display: inline-block;
-  text-align: center;
-  border: solid 1px black;
-  height: 450px;
-  margin-bottom: 20px;
-}
-#myFooter{
+footer{
   padding-top: 20px;
-  height: 340px;
-  background-color: grey;
+  height: 440px;
+  background-color: gray;
+}
+.gMap {
+  max-width: 100%;
+}
+.panel {
+  height: 95%;
+}
+.lowPanel {
+  height: 100%;
 }

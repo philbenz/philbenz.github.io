@@ -1,11 +1,14 @@
 $(function () {
+     //set the map in index.html
+
+
+
   promise.then(function (stuff) {
     var tacocat = stuff
     $('.carouselPic').attr('src', imgArr[0])
+
     fadeInAll()
     changeImg()
-
-    console.log(tacocat);
 
     var i = 0
 
