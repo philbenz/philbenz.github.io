@@ -1,6 +1,9 @@
 body {
   background-image: url(../images/swirl_pattern.png);
 }
+#fade {
+  display: none;
+}
 /*Header styling*/
 #header {
   height: 100px;
