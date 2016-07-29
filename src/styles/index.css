@@ -22,47 +22,22 @@ body {
 #navbar {
   height: 100%;
 }
-.nav-pills{
-  padding-top: 25px;
-}
 #site-heading h1{
   display: none;
 }
 #main{
   display: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 footer{
   margin-bottom: 0px;
   padding-top: 20px;
   height: 340px;
   background-color: gray;
 }
-
-ul>li{
-
-    float: none;
-    list-style: none;
-    margin-right: 15px;
-    margin-bottom: 42px;
-    margin-top: 30px;
-    text-align: center;
-
-}
-.nav .nav-pills li {
-  float: none;
-  margin-right: 15px;
-  text-align: center;
-  list-style: none;
-=======
 .nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
->>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
+  margin-top: 25px;
 }
-=======
->>>>>>> 85fa0f1b0e2512337feaebd02e22e7b165c6bbe3
 .glyphicon{
   display: inline-block;
   margin-top: 28px;
