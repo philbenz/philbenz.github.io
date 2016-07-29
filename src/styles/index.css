@@ -140,3 +140,24 @@ footer{
 .gMap {
   max-width: 100%;
 }
+
+/* footer css */
+li {
+  text-align: center;
+  list-style: none;
+  margin-top: 5px;
+  padding: 10px;
+  text-decoration:underline;
+  text-underline-position: below;
+}
+
+li img {
+  text-align: center;
+  list-style: none;
+  text-decoration:underline;
+  text-underline-position: below;
+}
+.footer_picture{
+    height: 60px;
+    width: 60px;
+}
