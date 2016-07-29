@@ -1,4 +1,5 @@
 $(function () {
+  fadeInAll()
   console.log($('#testing').attr('href'));
   $('.badge').text(window.location.search.split('=')[1])
   console.log($('#testing').attr('href'));
@@ -185,3 +186,7 @@ function productArray(data){
 function getCartContents(){
   return cartContents
 }
+
+function fadeInAll () {
+  $('#fade').delay(200).fadeIn(800)
+  }
