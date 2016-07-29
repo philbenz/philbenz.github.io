@@ -99,3 +99,17 @@ footer{
 .lowPanel {
   height: 100%;
 }
+
+/* footer css */
+.footer_li {
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  list-style: none;
+  text-decoration:underline;
+  text-underline-position: below;
+}
+.footer_picture{
+    height: 60px;
+    width: 60px;
+}
