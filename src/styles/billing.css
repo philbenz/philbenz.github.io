@@ -90,11 +90,11 @@ tfoot {
 }
 
 
-/*
+
 .billing {
   float: none;
   display: inline;
-}*/
+}
 
 .shoppingCartTitle {
   font-weight: bold;
@@ -111,9 +111,9 @@ footer{
   height: 440px;
   background-color: #465D50;
 }
-/*.panel {
+.panel {
   height: 95%;
-}*/
+}
 .lowPanel {
   height: 100%;
 }
