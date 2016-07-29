@@ -22,36 +22,22 @@ body {
 #navbar {
   height: 100%;
 }
-.nav-pills{
-  padding-top: 25px;
-}
 #site-heading h1{
   display: none;
 }
 #main{
   display: none;
 }
+
 footer{
   margin-bottom: 0px;
   padding-top: 20px;
   height: 340px;
   background-color: gray;
 }
-ul>li{
-    float: none;
-    list-style: none;
-    margin-right: 15px;
-    margin-bottom: 42px;
-    margin-top: 30px;
-    text-align: center;
-
+.nav-pills{
+  margin-top: 25px;
 }
-.nav .nav-pills li {
-  float: none;
-  margin-right: 15px;
-  text-align: center;
-  list-style: none;
-
 .glyphicon{
   display: inline-block;
   margin-top: 28px;
