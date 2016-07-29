@@ -1,4 +1,7 @@
 $(function () {
+  console.log($('#testing').attr('href'));
+  $('.badge').text(window.location.search.split('=')[1])
+  console.log($('#testing').attr('href'));
   var promise = Promise.resolve($.ajax({
     url:'http://galvanize-student-apis.herokuapp.com/gcommerce/products/',
     method: 'GET'
@@ -86,10 +89,18 @@ $(function () {
       var productPrice = parseFloat(this.parentNode.getElementsByClassName('valueOf')[0].textContent.substr(1))
       var productName = this.parentNode.getElementsByTagName('h3')[0].textContent
       $(this).fadeOut(100).fadeIn(10)
-      $('.badge').text(parseInt($('.badge').text())+1)
+      // cartNumber += 1
+      // $('.badge').text(parseInt($('.badge').text())+1)
       cartContents.push({[productName]: productPrice})
       // createTable(cartContents)
-      console.log(cartContents);
+      // console.log(cartNumber);
+      // window.Location += '?checkout=0'
+      // console.log(window);
+      var newURL = $('#testing').attr('href').substr(0,23)
+      var newNum = parseInt($('#testing').attr('href').substr(23)) +1
+      $('#testing').attr('href', newURL + newNum)
+      console.log($('#testing').attr('href'));
+      $('.badge').text($('#testing').attr('href').substr(23))
     })
 
   }
