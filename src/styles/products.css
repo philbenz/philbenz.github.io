@@ -3,13 +3,12 @@ body {
 }
 /*Header styling*/
 #header {
-  height: 200px;
+  height: 100px;
   background-color: gray;
 }
 #site-heading {
   height: 100%;
-  padding-top: 50px;
-  margin-left: 10px
+  margin-left: 10px;
 }
 #cart {
   font-size: 28px;
@@ -21,12 +20,11 @@ body {
   height: 100%;
 }
 .nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
+  margin-top: 25px;
 }
 .glyphicon{
   display: inline-block;
-  margin-top: 72px;
+  margin-top: 28px;
   margin-right: 15px
 }
 .cartIcon {
@@ -49,6 +47,8 @@ body {
   padding: 10px;
   float: left;
 }
+
+
 .austinImg{
   width: 80%;
   height: 43%;

@@ -3,14 +3,13 @@ body {
 }
 
 #header {
-  height: 200px;
+  height: 100px;
   background-color: gray;
 
 }
 #site-heading {
   height: 100%;
-  padding-top: 50px;
-  margin-left: 10px
+  margin-left: 10px;
 }
 #cart {
   font-size: 28px;
@@ -22,14 +21,7 @@ body {
   height: 100%;
 }
 .nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
-}
-.nav .nav-pills li {
-  float: none;
-  margin-right: 15px;
-  text-align: center;
-  list-style: none;
+  margin-top: 25px;
 }
 .cartIcon {
   text-decoration: none !important;
@@ -41,7 +33,7 @@ body {
 
 .glyphicon{
   display: inline-block;
-  margin-top: 72px;
+  margin-top: 28px;
   margin-right: 15px
 }
 tfoot {
