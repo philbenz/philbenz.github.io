@@ -1,14 +1,15 @@
 body {
-  background-image: url(../images/sayagata-400px.png);
+  background-image: url(../images/swirl_pattern.png);
 }
 /*Header styling*/
 #header {
   height: 100px;
-  background-color: gray;
+  background-color: #465D50;
 }
 #site-heading {
   height: 100%;
   margin-left: 10px;
+  color: white;
 }
 #cart {
   font-size: 28px;
@@ -29,14 +30,14 @@ body {
 }
 .cartIcon {
   text-decoration: none !important;
-  color: #2C3E50;
+  color: white;
 }
 .cartIcon:hover{
   color: white;
 }
 .productHolder{
   float: right;
-  background-color: grey;
+  background-color: #465D50;
 }
 .productDiv{
   position: relative;
@@ -88,7 +89,7 @@ aside .Austin{
 footer{
   padding-top: 20px;
   height: 440px;
-  background-color: gray;
+  background-color: #465D50;
 }
 .gMap {
   max-width: 100%;
