@@ -10,6 +10,30 @@ body {
   height: 100%;
   margin-left: 10px;
 }
+li {
+  text-align: center;
+  list-style: none;
+  margin-top: 5px;
+  padding: 10px;
+  text-decoration:underline;
+  text-underline-position: below;
+}
+.nodisplay {
+
+}
+li img {
+  text-align: center;
+  list-style: none;
+  /*margin-top: 15px;
+  padding: 10px;*/
+  text-decoration:underline;
+  text-underline-position: below;
+}
+.footer_picture{
+    height: 60px;
+    width: 60px;
+}
+
 #cart {
   font-size: 28px;
   text-align: right;
@@ -39,25 +63,32 @@ tfoot {
   font-weight: bold;
 }
 
-.billingLabel {
-  margin-right: 200px;
+#creditCardNumberLabel {
+  margin-right: 100px;
+}
+#expMonthLabel {
+  margin-right: 25px;
+}
+#expYearLabel {
+  margin-right: 100px;
+}
+#cvcLabel{
+  margin-right: 100px;
 }
 
 .creditCardNumber {
-  margin-right: 200px;
+  margin-right: 80px;
 }
-
 .expMonth {
-  margin-right: 200px;
+  margin-right: 75px;
 }
-
 .expYear {
-  margin-right: 200px;
+  margin-right: 125px;
+}
+.cvc{
+  margin-right: 100px;
 }
 
-.cvc {
-  margin-right: 200px;
-}
 
 
 .billing {
