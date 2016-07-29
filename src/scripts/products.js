@@ -46,10 +46,10 @@ $(function () {
       barHover()
       DivHover()
       AddCartNum()
-    } else {
-      for(var i = 0; i < allProducts.length; i++) {
+    } else{
+      for(var i = 0; i < allProducts.length; i++){
         console.log();
-        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ) {
+        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ){
           products.push(allProducts[i])
         }
       }

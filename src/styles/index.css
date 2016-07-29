@@ -31,18 +31,13 @@ body {
 #main{
   display: none;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 footer{
   margin-bottom: 0px;
   padding-top: 20px;
   height: 340px;
   background-color: gray;
 }
-
 ul>li{
-
     float: none;
     list-style: none;
     margin-right: 15px;
@@ -56,13 +51,7 @@ ul>li{
   margin-right: 15px;
   text-align: center;
   list-style: none;
-=======
-.nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
->>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
-}
->>>>>>> 2a855e9a67b88bda35fdb150eb2c51265b547606
+
 .glyphicon{
   display: inline-block;
   margin-top: 28px;
