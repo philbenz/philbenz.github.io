@@ -9,13 +9,15 @@ body {
 #site-heading {
   height: 100%;
   margin-left: 10px;
-  color: white
+  color: white;
+  text-shadow: 2px 2px black;
 }
 #cart {
   font-size: 28px;
   text-align: right;
   height: 100%;
   display: none;
+  text-shadow: 2px 2px black;
 }
 .nav {
   display: none;
@@ -31,6 +33,7 @@ body {
 }
 .nav-pills{
   margin-top: 25px;
+  text-shadow: 2px 2px black;
 }
 .glyphicon{
   display: inline-block;

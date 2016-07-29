@@ -10,11 +10,13 @@ body {
   height: 100%;
   margin-left: 10px;
   color: white;
+  text-shadow: 2px 2px black;
 }
 #cart {
   font-size: 28px;
   text-align: right;
   height: 100%;
+  text-shadow: 2px 2px black;
 }
 
 #navbar {
@@ -22,6 +24,7 @@ body {
 }
 .nav-pills{
   margin-top: 25px;
+  text-shadow: 2px 2px black;
 }
 .glyphicon{
   display: inline-block;
