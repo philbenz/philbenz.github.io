@@ -27,8 +27,6 @@
         </a>
       </div>
     </header>
-      <div>
-      </div>
           <div class="row">
             <div class="col-xs-6">
               <div class="panel panel-default">
@@ -37,7 +35,7 @@
                 <div class="panel-body">
                   <form class="shipping">
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">First Name</label>
+                      <label for="shippingFirstName" class="col-lg-2 control-label">First Name</label>
                       <div class="col-lg-2">
                         <input type="text" class="shippingFirstName form-control input-sm">
                       </div>
@@ -49,27 +47,27 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="company" class="col-lg-2 control-label">Company</label>
+                      <label for="shippingCompany" class="col-lg-2 control-label">Company</label>
                       <div class="col-lg-2">
                       <input type="text" class="shippingCompany form-control input-sm">
                     </div>
                     </div>
                     <div class="form-group">
-                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
+                      <label for="shippingAddressLine1" class="col-lg-4 control-label">Address Line 1</label>
                       <input type="text" class="shippingAddressLine1 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
+                      <label for="shippingAddressLine2" class="col-lg-4 control-label">Address Line 2</label>
                       <input type="text" class="shippingAddressLine2 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="city" class="col-lg-1 control-label">City</label>
+                      <label for="shippingCity" class="col-lg-1 control-label">City</label>
                       <div class="col-lg-4">
                         <input type="text" class="shippingCity form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <label for="shippingState" class="col-lg-1 control-label">State</label>
                       <div class="col-lg-2">
                         <select class="shippingState form-control">
                         </select>
@@ -86,64 +84,59 @@
                         <input type="checkbox" id="isSameAsShipping"> Copy Shipping to Billing
                       </div>
                     </div>
+                  </form>
                 </div>
               </div>
             </div>
-
             <div class="col-xs-6">
               <div class="panel panel-default">
-                <div id="billingPanel"class="panel-heading titleName">Billing
+                <div class="panel-heading titleName" id="billingPanel">Billing
                 </div>
                 <div class="panel-body">
-                  <form class="billing">
+                  <form class="shipping">
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">First Name</label>
+                      <label for="billingFirstName" class="col-lg-2 control-label">First Name</label>
                       <div class="col-lg-2">
                         <input type="text" class="billingFirstName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                      <label for="billingLastName" class="col-lg-2 control-label">Last Name</label>
                       <div class="col-lg-2">
                         <input type="text" class="billingLastName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="company" class="col-lg-2 control-label">Company</label>
+                      <label for="billingCompany" class="col-lg-2 control-label">Company</label>
                       <div class="col-lg-2">
                       <input type="text" class="billingCompany form-control input-sm">
                     </div>
                     </div>
                     <div class="form-group">
-                      <label for="addressLine1" class="col-lg-4 control-label">Address Line 1</label>
+                      <label for="billingAddressLine1" class="col-lg-4 control-label">Address Line 1</label>
                       <input type="text" class="billingAddressLine1 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="addressLine2" class="col-lg-4 control-label">Address Line 2</label>
+                      <label for="billingAddressLine2" class="col-lg-4 control-label">Address Line 2</label>
                       <input type="text" class="billingAddressLine2 form-control input-sm">
                     </div>
                     <div class="form-group">
-                      <label for="city" class="col-lg-1 control-label">City</label>
+                      <label for="billingCity" class="col-lg-1 control-label">City</label>
                       <div class="col-lg-4">
                         <input type="text" class="billingCity form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="state" class="col-lg-1 control-label">State</label>
+                      <label for="billingState" class="col-lg-1 control-label">State</label>
                       <div class="col-lg-2">
                         <select class="billingState form-control">
                         </select>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <label for="billingZip" class="col-lg-1 control-label">Zip Code</label>
                       <div class="col-lg-3">
                         <input type="text" class="billingZip form-control input-sm">
-                      </div>
-                    </div>
-                    <div class="form-group nodisplay">
-                      <div class="col-lg-12">
-                        <input type="checkbox" id="isSameAsShipping">will be hidden
                       </div>
                     </div>
                   </div>
@@ -151,7 +144,6 @@
                 </div>
               </div>
             </div>
-          </div>
 
           <div class="row">
             <div id="creditCardForm" class="col-xs-12 panel panel-default">
@@ -170,10 +162,8 @@
                       <input type="text" class="expMonth" size="3">
                       <input type="text" class="expYear" maxlength="4" size="4">
                       <input type="text" class="cvc" size="3" maxlength="3">
-                      <input type="submit" value="Purchase" id="purchaseButton">
-                      <div>
-                        <label class="label label-default" id="valid-callout"></label>
-                      </div>
+                      <input type="submit" value="Purchase" id="purchaseButton">                        <label class="label label-default" id="valid-callout"></label>
+
                   </div>
                 </form>
                 </div>
