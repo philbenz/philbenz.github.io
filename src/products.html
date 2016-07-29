@@ -8,8 +8,6 @@
     <title></title>
   </head>
   <body>
-    <div class="container-fluid">
-
     <header id="header">
       <div id="site-heading" class="row col-md-4">
         <h1>eCommerce Site</h1>
@@ -23,14 +21,19 @@
       </div>
       <div id="cart" class="cart col-md-4">
         <p class="cartItems"></h2>
-        <span class="glyphicon glyphicon-shopping-cart"></span>
+          <a class="cartIcon" href="billing.html">
         <span class="badge">0</span>
+        <span class="glyphicon glyphicon-shopping-cart"></span>
+        </a>
       </div>
     </header>
+    <div id="main"class="container-fluid row">
+
 
     <div class="productHolder row col-md-9">
 
     </div>
+
     <aside class="filters col-md-3">
       <div class="priceRange Austin">
         <form class="austinsForms" id="filtereds">
@@ -48,6 +51,7 @@
 
       </div>
     </aside>
+      </div>
 </div>
 <br>
 <footer class="container-fluid">
@@ -109,9 +113,8 @@
 </footer>
 
 
-  <div class="idk">
+  <div class="idk"></div>
 
-  </div>
   <script type="text/javascript" src="./scripts/productInfo.js"></script>
     <script type="text/javascript" src="scripts/products.js"></script>
   </body>
