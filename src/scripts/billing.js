@@ -1,5 +1,5 @@
 $(document).on('ready', function() {
-
+  fadeInAll()
     //sanity check
     console.log('sanity check with billing js');
 
@@ -139,4 +139,8 @@ function buildStatesSelector() {
     $('#shoppingCartTable').append('</thead>');
     $('#shoppingCartTable').append('<tbody>');
     $('#shoppingCartTable').append('</tbody>');
+  }
+
+  function fadeInAll () {
+    $('#fade').fadeIn(800)
   }
