@@ -101,20 +101,11 @@ footer{
 }
 
 /* footer css */
-li {
+.footer_li {
   text-align: center;
-  list-style: none;
   margin-top: 5px;
   padding: 10px;
-  text-decoration:underline;
-  text-underline-position: below;
-}
-
-li img {
-  text-align: center;
   list-style: none;
-  /*margin-top: 15px;
-  padding: 10px;*/
   text-decoration:underline;
   text-underline-position: below;
 }
