@@ -63,7 +63,10 @@ tfoot {
   margin-right: 100px;
 }
 #cvcLabel{
-  margin-right: 100px;
+  margin-right: 30px;
+}
+#purchaseButton {
+  margin-right: 30px;
 }
 
 .creditCardNumber {
@@ -80,15 +83,12 @@ tfoot {
 }
 
 
-
+/*
 .billing {
   float: none;
   display: inline;
-}
+}*/
 
-#addressLine1 {
-  padding: 30px;
-}
 .shoppingCartTitle {
   font-weight: bold;
   font-size: 18px;
@@ -104,12 +104,21 @@ footer{
   height: 440px;
   background-color: gray;
 }
-.panel {
+/*.panel {
   height: 95%;
-}
+}*/
 .lowPanel {
   height: 100%;
 }
 .gMap {
   max-width: 100%;
+}
+
+.billingZip {
+  margin-bottom: 33px;
+}
+
+#valid-callout {
+  marging-right: 10px;
+  padding: 10px;
 }
