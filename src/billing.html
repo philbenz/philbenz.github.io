@@ -15,13 +15,13 @@
       </div>
       <div id="navbar" class="navbar col-md-4">
           <ul class="nav nav-pills col-md-offset-3">
-            <li class="active"role="presentation"><a href="index.html">Home</a></li>
-            <li class="active"role="presentation"><a href="products.html">Products</a></li>
-            <li class="active"role="presentation"><a href="billing.html">Billing</a></li>
+            <li class="active" role="presentation"><a href="index.html">Home</a></li>
+            <li class="active" role="presentation"><a href="products.html">Products</a></li>
+            <li class="active" role="presentation"><a href="billing.html">Billing</a></li>
           </ul>
       </div>
       <div id="cart" class="cart col-md-4">
-        <p class="cartItems"></h2>
+        <p class="cartItems"></p>
           <a class="cartIcon" href="billing.html">
         <span class="glyphicon glyphicon-shopping-cart"></span>
         </a>
@@ -37,51 +37,51 @@
                     <div class="form-group">
                       <label for="shippingFirstName" class="col-lg-2 control-label">First Name</label>
                       <div class="col-lg-2">
-                        <input type="text" class="shippingFirstName form-control input-sm">
+                        <input name="shippingFirstName" type="text" class=" form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                      <label for="shippingLastName" class="col-lg-2 control-label">Last Name</label>
                       <div class="col-lg-2">
-                        <input type="text" class="shippingLastName form-control input-sm">
+                        <input type="text" name="shippingLastName" class="form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="shippingCompany" class="col-lg-2 control-label">Company</label>
                       <div class="col-lg-2">
-                      <input type="text" class="shippingCompany form-control input-sm">
+                      <input type="text" name="shippingCompany" class="form-control input-sm">
                     </div>
                     </div>
                     <div class="form-group">
                       <label for="shippingAddressLine1" class="col-lg-4 control-label">Address Line 1</label>
-                      <input type="text" class="shippingAddressLine1 form-control input-sm">
+                      <input type="text" name="shippingAddressLine1" class="form-control input-sm">
                     </div>
                     <div class="form-group">
                       <label for="shippingAddressLine2" class="col-lg-4 control-label">Address Line 2</label>
-                      <input type="text" class="shippingAddressLine2 form-control input-sm">
+                      <input type="text" name="shippingAddressLine2" class="form-control input-sm">
                     </div>
                     <div class="form-group">
                       <label for="shippingCity" class="col-lg-1 control-label">City</label>
                       <div class="col-lg-4">
-                        <input type="text" class="shippingCity form-control input-sm">
+                        <input type="text" name="shippingCity" class="shippingCity form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="shippingState" class="col-lg-1 control-label">State</label>
                       <div class="col-lg-2">
-                        <select class="shippingState form-control">
+                        <select name="shippingState" class="shippingState form-control">
                         </select>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="zip" class="col-lg-1 control-label">Zip Code</label>
+                      <label for="shippingZip" class="col-lg-1 control-label">Zip Code</label>
                       <div class="col-lg-3">
-                        <input type="text" class="shippingZip form-control input-sm">
+                        <input name "shippingZip" type="text" class="shippingZip form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
                       <div class="col-lg-12">
-                        <input type="checkbox" id="isSameAsShipping"> Copy Shipping to Billing
+                        <input name="shippingCopyBox" type="checkbox" id="isSameAsShipping"> Copy Shipping to Billing
                       </div>
                     </div>
                   </form>
@@ -93,28 +93,28 @@
                 <div class="panel-heading titleName" id="billingPanel">Billing
                 </div>
                 <div class="panel-body">
-                  <form class="shipping">
+                  <form class="billing">
                     <div class="form-group">
                       <label for="billingFirstName" class="col-lg-2 control-label">First Name</label>
                       <div class="col-lg-2">
-                        <input type="text" class="billingFirstName form-control input-sm">
+                        <input type="text" name="billingFirstName" class="billingFirstName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="billingLastName" class="col-lg-2 control-label">Last Name</label>
                       <div class="col-lg-2">
-                        <input type="text" class="billingLastName form-control input-sm">
+                        <input type="text" name="billingLastName" class="billingLastName form-control input-sm">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="billingCompany" class="col-lg-2 control-label">Company</label>
                       <div class="col-lg-2">
-                      <input type="text" class="billingCompany form-control input-sm">
+                      <input type="text" name="billingCompany" class="billingCompany form-control input-sm">
                     </div>
                     </div>
                     <div class="form-group">
                       <label for="billingAddressLine1" class="col-lg-4 control-label">Address Line 1</label>
-                      <input type="text" class="billingAddressLine1 form-control input-sm">
+                      <input type="text" name="billingAddressLine1" class="form-control input-sm">
                     </div>
                     <div class="form-group">
                       <label for="billingAddressLine2" class="col-lg-4 control-label">Address Line 2</label>
