@@ -33,24 +33,21 @@ body {
 #main{
   display: none;
 }
-footer{
-  padding-top: 20px;
-  height: 440px;
-  background-color: gray;
-}
-.nav .nav-pills li {
-  float: none;
-  margin-right: 15px;
-  text-align: center;
-  list-style: none;
+.nav-pills{
+  margin-left: 20%;
+  margin-top: 70px;
 }
 .glyphicon{
   display: inline-block;
   margin-top: 72px;
   margin-right: 15px
 }
-.cart p{
-  display: inline-block;
+.cartIcon {
+  text-decoration: none !important;
+  color: #2C3E50
+}
+.cartIcon:hover{
+  color: white;
 }
 .product {
   display: inline-block;
@@ -123,16 +120,15 @@ footer{
 .teaserLink:hover{
   color: white;
 }
+footer{
+  padding-top: 20px;
+  height: 440px;
+  background-color: gray;
+}
 .panel {
   height: 95%;
 }
-.cartIcon {
-  text-decoration: none !important;
-  color: #2C3E50
-}
-.cartIcon:hover{
-  color: white;
-}
+
 .lowPanel {
   height: 100%;
 }

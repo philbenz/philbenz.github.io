@@ -17,7 +17,6 @@ $(function () {
     }
 
     tacocat = productArray(AustinData)
-    console.log(tacocat);
     var allProducts = $('.productDiv')
 
     $('#highorlow').change(function() {
