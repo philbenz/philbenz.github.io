@@ -36,6 +36,17 @@ footer{
   height: 340px;
   background-color: gray;
 }
+
+ul>li{
+
+    float: none;
+    list-style: none;
+    margin-right: 15px;
+    margin-bottom: 42px;
+    margin-top: 30px;
+    text-align: center;
+
+}
 .nav .nav-pills li {
   float: none;
   margin-right: 15px;
