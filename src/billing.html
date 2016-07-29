@@ -161,23 +161,21 @@
                 <div class="panel-body">
                   <form class="creditCardForm">
                     <div class="form-group">
-                      <label for="creditCardNumber" class="col-lg-3">Credit Card Number</label>
-                      <label for="expMonth" class="col-lg-3">Exp Date</label>
-                      <label for="expirationYear" class="col-lg-3">Expiration Year</label>
-                      <label for="cvc" class="col-lg-3">CVC</label>
+                      <label for="creditCardNumber" id="creditCardNumberLabel">Credit Card Number</label>
+                      <label for="expMonth" id="expMonthLabel">Exp Month</label>
+                      <label for="expirationYear" id="expYearLabel">Expiration Year</label>
+                      <label for="cvc" id="cvcLabel">CVC</label>
                     </div>
                     <div class="form-group">
-                      <input type="text" class="creditCardNumber col-lg-3" size="16">
-                      <input type="text" class="expMonth col-lg-3" size="3">
-                      <input type="text" class="expYear col-lg-3">
-                      <input type="text" class="cvc col-lg-3">
+                      <input type="text" class="creditCardNumber" size="20">
+                      <input type="text" class="expMonth" size="3">
+                      <input type="text" class="expYear" maxlength="4" size="4">
+                      <input type="text" class="cvc" size="3" maxlength="3">
                       <input type="submit" value="Purchase" id="purchaseButton">
-                      <div class="col-lg-10 col-lg-offset-5">
-                            <label class="col-lg-4 label label-default" id="valid-callout"></label>
+                      <div>
+                        <label class="label label-default" id="valid-callout"></label>
                       </div>
                   </div>
-                </div>
-              </div>
                 </form>
                 </div>
                 </div>
