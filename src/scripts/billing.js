@@ -11,11 +11,6 @@ $(document).on('ready', function() {
 
     checkShoppingCart();
 
-    var mapInfo = initialize();
-
-    //set the map in index.html
-    var map = new google.maps.Map(document.getElementById('googleMap'), mapInfo);
-
 
     $('#purchaseButton').click('submit', function( event ) {
       //ensure that the submit doesn't go to a server
@@ -120,19 +115,6 @@ $(document).on('ready', function() {
 
 
 });
-
-
-//this function is being used to populate the mapProp object for the map.
-function initialize() {
-
-  var mapProp = {
-      center:new google.maps.LatLng(+39.7330659, -104.9922190),
-      zoom: 15,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-
-  return mapProp;
-}
 
 
 function buildStatesSelector() {
