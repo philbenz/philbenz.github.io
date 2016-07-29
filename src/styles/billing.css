@@ -1,11 +1,19 @@
+<<<<<<< HEAD
+
+
+=======
 body {
   background-image: url(../images/sayagata-400px.png);
 }
+>>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
 
 #header {
   height: 200px;
   background-color: gray;
 
+<<<<<<< HEAD
+
+=======
 }
 #site-heading {
   height: 100%;
@@ -47,6 +55,7 @@ body {
 tfoot {
   font-weight: bold;
 }
+>>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
 
 .billingLabel {
   margin-right: 200px;
@@ -86,6 +95,54 @@ tfoot {
   font-weight: bold;
   font-size: 18px;
 }
+<<<<<<< HEAD
+
+#googleMap {
+  margin-left: 20px;
+  height: 250px;
+  width: 250px;
+}
+
+#header {
+  height: 200px;
+  background-color: gray;
+}
+#site-heading {
+  height: 100%;
+  padding-top: 50px;
+  margin-left: 10px
+}
+#cart {
+  font-size: 28px;
+  text-align: right;
+  height: 100%;
+}
+.nav {
+
+}
+#navbar {
+  height: 100%;
+}
+.nav-pills{
+  margin-left: 20%;
+  margin-top: 70px;
+}
+
+#footer{
+    /*margin-bottom: 0px;*/
+    padding-top: 20px;
+    height: 400px;
+    background-color: gray;
+}
+
+li {
+  float: none;
+  list-style: none;
+  margin-right: 15px;
+  margin-bottom: 42px;
+  margin-top: 30px;
+  text-align: center;
+=======
 footer{
   padding-top: 20px;
   height: 440px;
@@ -93,6 +150,7 @@ footer{
 }
 .panel {
   height: 95%;
+>>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
 }
 .lowPanel {
   height: 100%;
