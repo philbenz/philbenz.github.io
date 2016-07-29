@@ -1,23 +1,24 @@
 $(function () {
-     //set the map in index.html
-
-
-
-  promise.then(function (stuff) {
-    var tacocat = stuff
+  //promise to import data from productInfo.js
+  promise.then(function (productInfo) {
+    var data = productInfo;
+    //set first carousel picture
     $('.carouselPic').attr('src', imgArr[0])
 
+    //fn to fade in page
     fadeInAll()
+    //fn to start the carousel rotation
     changeImg()
 
-    var i = 0
-
+    //loop to dynamically generate random product names, images and prices
     for(var j = 0; j <= 2; j++) {
-      var randomSelect = Math.floor(Math.random() * tacocat.length)
-      $('.prod' + j).attr('src', tacocat[randomSelect].productImages)
-      $('.description' + j + ' h3').text(tacocat[randomSelect].productNames)
-      $('.description' + j + ' p').text(tacocat[randomSelect].price)
+      var randomSelect = Math.floor(Math.random() * data.length)
+      $('.prod' + j).attr('src', data[randomSelect].productImages)
+      $('.description' + j + ' h3').text(data[randomSelect].productNames)
+      $('.description' + j + ' p').text(data[randomSelect].price)
     }
+
+    var i = 0
 
     $('#imgLeft').on('click', function () {
       $('.carouselPic').attr('src', imgArr[i]).fadeOut(10)
@@ -86,9 +87,8 @@ $(function () {
         $('.carouselPic').fadeIn(600)
         $('#imgLeft').fadeIn(600)
         $('#imgRight').fadeIn(600)
-      }, 200)
-    }, 300)
-
+        }, 200)
+      }, 300)
     }
   })
 })

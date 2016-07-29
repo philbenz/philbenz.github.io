@@ -3,9 +3,9 @@ $(function () {
     url:'http://galvanize-student-apis.herokuapp.com/gcommerce/products/',
     method: 'GET'
   }))
-  .then(function(data){
+  .then(function (data) {
     var AustinData = data
-    for(var i = 0; i < data.length; i++){
+    for(var i = 0; i < data.length; i++) {
       products.push('<div class="productDiv text-center" id="product' + i + '"><img class="austinImg" src="' + imgs[i] +'"/><h3>' + Names[i] + '</h3> <p>' + data[i].description + '</p><p class="valueOf">' + data[i].price + '</p><div class="rating"><div class="bar b1"></div><div class="bar b2"></div><div class="bar b3"></div><div class="bar b4"></div><div class="bar b1"></div></div><div class="AddCart">Add to Cart</div>')
       $('.productHolder').append(products[i])
       AustinData[i].productImages = imgs[i]
@@ -15,14 +15,12 @@ $(function () {
       DivHover()
       AddCartNum()
     }
-
-    tacocat = productArray(AustinData)
     var allProducts = $('.productDiv')
 
     $('#highorlow').change(function() {
       var arrhigLow = $('.productDiv')
       $('.productHolder').empty()
-      for(var i = 0; i < arrhigLow.length; i++){
+      for(var i = 0; i < arrhigLow.length; i++) {
         $('.productHolder').prepend(arrhigLow[i])
       }
       barHover()
@@ -30,28 +28,28 @@ $(function () {
       AddCartNum()
     })
 
-    $('#filtereds').change(function(){
+    $('#filtereds').change(function() {
       var firstNum = parseFloat($('input[name=filtered]:radio:checked').val().split('-')[0])
       var secNum = parseFloat($('input[name=filtered]:radio:checked').val().split('-')[1])
       var products = []
-      if($('#lowHigh').is(':checked')){
-      for(var i = 0; i < allProducts.length; i++){
+      if($('#lowHigh').is(':checked')) {
+      for(var i = 0; i < allProducts.length; i++) {
         console.log();
-        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ){
+        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ) {
           products.push(allProducts[i])
         }
       }
       $('.productHolder').empty()
-      products.forEach(function(divsWPic){
+      products.forEach(function(divsWPic) {
         $('.productHolder').append(divsWPic)
       })
       barHover()
       DivHover()
       AddCartNum()
-    }else{
-      for(var i = 0; i < allProducts.length; i++){
+    } else {
+      for(var i = 0; i < allProducts.length; i++) {
         console.log();
-        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ){
+        if(firstNum < parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) && parseFloat($(allProducts[i]).children()[3].textContent.substr(1)) < secNum ) {
           products.push(allProducts[i])
         }
       }
