@@ -2,14 +2,13 @@ body {
   background-image: url(../images/sayagata-400px.png);
 }
 #header {
-  height: 200px;
+  height: 100px;
   background-color: gray;
   display: none;
 }
 #site-heading {
   height: 100%;
-  padding-top: 50px;
-  margin-left: 10px
+  margin-left: 10px;
 }
 #cart {
   font-size: 28px;
@@ -24,8 +23,7 @@ body {
   height: 100%;
 }
 .nav-pills{
-  margin-left: 20%;
-  margin-top: 70px;
+  padding-top: 25px;
 }
 #site-heading h1{
   display: none;
@@ -33,6 +31,7 @@ body {
 #main{
   display: none;
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 footer{
   margin-bottom: 0px;
@@ -62,9 +61,11 @@ ul>li{
   margin-top: 70px;
 >>>>>>> 5bc577d57fd336d6cf7ce941ecc5a20b792335ce
 }
+=======
+>>>>>>> 85fa0f1b0e2512337feaebd02e22e7b165c6bbe3
 .glyphicon{
   display: inline-block;
-  margin-top: 72px;
+  margin-top: 28px;
   margin-right: 15px
 }
 .cartIcon {
@@ -82,7 +83,7 @@ ul>li{
   margin-bottom: 20px;
 }
 .carousel{
-  height: 490px;
+  height: 590px;
   overflow: hidden;
   margin-bottom: 20px;
   background-color: gray;
